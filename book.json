@@ -1,0 +1,50 @@
+{
+	"author": "Nick",
+	"description": "记录Gitbook的配置和一些插件的使用",
+	"title" : "Gitbook Use",
+	"language": "zh-hans",
+	"links": {
+            "sidebar": {
+                "Home": "#"
+            }
+	},
+	"plugins": [
+	    "donate",
+	    "-sharing", 
+	    "sharing-plus"
+	],
+	"pluginsConfig": {
+		"donate": {
+	        	"wechat": "https://wp.hellocode.name/wp-content/uploads/2017/12/reward_1513737335-200x200.jpg",
+	       		"alipay": "https://wp.hellocode.name/wp-content/uploads/2017/12/reward_1513737644-200x200.jpg",
+	       		"title": "",
+	        	"button": "赏",
+	        	"alipayText": "支付宝打赏",
+	        	"wechatText": "微信打赏"
+	    	},
+		"sharing": {
+           		"douban": false,
+           		"facebook": false,
+           		"google": false,
+           		"hatenaBookmark": false,
+           		"instapaper": false,
+           		"line": false,
+           		"linkedin": true,
+           		"messenger": false,
+           		"pocket": false,
+           		"qq": true,
+           		"qzone": true,
+           		"stumbleupon": false,
+           		"twitter": true,
+           		"viber": false,
+           		"vk": false,
+           		"weibo": true,
+           		"whatsapp": false,
+           		"all": [
+               			"facebook", "twitter","weibo",
+				 "linkedin","qq", "qzone"
+           		]
+       		}
+	}
+
+}
