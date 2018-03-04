@@ -1,12 +1,15 @@
 {
 	"author": "Nick",
-	"description": "记录Gitbook的配置和一些插件的使用",
-	"title" : "Gitbook Use",
+	"description": "Gitbook 描述",
+	"title" : "Gitbook title",
 	"language": "zh-hans",
 	"links": {
             "sidebar": {
                 "Home": "#"
             }
+	},
+	"styles": {
+	        "website": "styles/website.css"
 	},
 	"plugins": [
 	    "donate",

@@ -1,0 +1,6 @@
+.gitbook-link {
+    display: none !important;
+}
+.summary > li:nth-child(3) {
+    display: none !important;
+}
