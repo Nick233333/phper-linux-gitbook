@@ -5,7 +5,7 @@
 	"language": "zh-hans",
 	"links": {
             "sidebar": {
-                "Home": "./readme.md"
+                "Home": "linux.hellocode.name"
             }
 	},
 	"styles": {
