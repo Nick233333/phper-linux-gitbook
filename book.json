@@ -13,10 +13,15 @@
 	},
 	"plugins": [
 	    "donate",
-	    "-sharing", 
+	    "sitemap",
+	    "-sharing",
+	    "splitter",
 	    "sharing-plus"
 	],
 	"pluginsConfig": {
+		"sitemap": {
+            		"hostname": "http://linux.hellocode.name"
+	        },
 		"donate": {
 	        	"wechat": "https://wp.hellocode.name/wp-content/uploads/2017/12/reward_1513737335-200x200.jpg",
 	       		"alipay": "https://wp.hellocode.name/wp-content/uploads/2017/12/reward_1513737644-200x200.jpg",
@@ -32,7 +37,7 @@
            		"hatenaBookmark": false,
            		"instapaper": false,
            		"line": false,
-           		"linkedin": true,
+           		"linkedin": false,
            		"messenger": false,
            		"pocket": false,
            		"qq": true,
@@ -45,7 +50,7 @@
            		"whatsapp": false,
            		"all": [
                			"facebook", "twitter","weibo",
-				 "linkedin","qq", "qzone"
+				 "qq", "qzone"
            		]
        		}
 	}
