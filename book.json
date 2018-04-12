@@ -5,7 +5,7 @@
 	"language": "zh-hans",
 	"links": {
             "sidebar": {
-                "PHPer 必知必会的 Linux": "#"
+                "PHPer 必知必会的 Linux 命令": "https://linux.hellocode.name/"
             }
 	},
 	"styles": {
