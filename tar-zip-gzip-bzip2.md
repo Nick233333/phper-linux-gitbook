@@ -1,12 +1,18 @@
-### tar 打包压缩命令
+## tar 打包压缩命令
 
 ```
-tar -cxvf filename.tar #打包压缩并显示文件信息`
+tar -czvf filename.tar.gz #打包使用gzip压缩并显示文件信息`
 
-tar -zxvf filename.tar #解压并输出文件信息
+tar -xzvf filename.tar.gz #解压gzip文件并输出文件信息
+
+tar -cjvf filename.tar.bz2 #打包使用gzip2压缩并显示文件信息`
+
+tar -xjvf filename.tar.bz2 #解压使用gzip2压缩并显示文件信息`
+
 ```
+补充：`-v` 为显示信息
 
-### zip 压缩命令
+## zip 压缩命令
 
 ```
 zip -qr html.zip ./html #将当前html目录递归压缩保存文件名为html.zip
