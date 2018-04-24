@@ -1,11 +1,11 @@
 ## tar 打包压缩命令
 
 ```
-tar -czvf filename.tar.gz #打包使用gzip压缩并显示文件信息`
+tar -czvf filename.tar.gz test #打包test目录并使用gzip压缩并显示文件信息`
 
 tar -xzvf filename.tar.gz #解压gzip文件并输出文件信息
 
-tar -cjvf filename.tar.bz2 #打包使用gzip2压缩并显示文件信息`
+tar -cjvf filename.tar.bz2 test #打包test目录并使用gzip2压缩并显示文件信息`
 
 tar -xjvf filename.tar.bz2 #解压使用gzip2压缩并显示文件信息`
 
