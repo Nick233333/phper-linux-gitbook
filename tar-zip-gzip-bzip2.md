@@ -15,9 +15,11 @@ tar -xjvf filename.tar.bz2 #解压使用gzip2压缩并显示文件信息`
 ## zip 压缩命令
 
 ```
-zip -qr html.zip ./html #将当前html目录递归压缩保存文件名为html.zip
+zip html.zip./html #压缩当前目录下html目录或文件
 
-unzip -v html.zip #查看压缩文件信息
+unzip html.zip #解压在当前目录或文件
+
+zip -qr html.zip ./html #将当前html目录递归压缩保存文件名为html.zip
 
 unzip html.zip #解压在当前目录
 
