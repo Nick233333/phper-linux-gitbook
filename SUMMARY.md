@@ -1,8 +1,7 @@
 # Summary
 
-* [前言](introduction.md)
-
 ## 入门必看
+* [介绍](introduction.md)
 * [cd-ls-pwd](cd-ls-pwd.md)
 
 ## 用户与用户组
