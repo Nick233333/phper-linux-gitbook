@@ -1,7 +1,7 @@
 {
 	"author": "Nick",
-	"description": "Gitbook 描述",
-	"title" : "Gitbook title",
+	"description": "PHPer 必知必会的 Linux 命令",
+	"title" : "PHPer 必知必会的 Linux 命令",
 	"language": "zh-hans",
 	"links": {
             "sidebar": {
