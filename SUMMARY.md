@@ -17,7 +17,8 @@
 * [find-search](find-search.md)	
 
 ## 查看编辑相关
-* [cat-less-tail-head-vim](cat-less-tail-head-vim.md)		
+* [cat-less-more-tail-head-vim](cat-less-more-tail-head-vim.md)
+
 ## 网络与系统资源
 * [netstat-system](netstat-system.md)
 
