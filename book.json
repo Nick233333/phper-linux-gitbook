@@ -18,7 +18,8 @@
 	    "splitter",
 	    "toggle-chapters",
 	    "sharing-plus",
-	    "search"
+		"search",
+		"search-pro"
 	],
 	"pluginsConfig": {
 		"sitemap": {
