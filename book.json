@@ -17,7 +17,10 @@
 	    "-sharing",
 	    "splitter",
 	    "toggle-chapters",
-	    "sharing-plus"
+	    "sharing-plus",
+	    "-search",
+	    "search-pro",
+	    "advanced-emoji"
 	],
 	"pluginsConfig": {
 		"sitemap": {
