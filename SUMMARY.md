@@ -34,6 +34,9 @@
 ## 其他
 * [other](other.md)
 
+## PHP 依赖工具
+* [composer](composer.md)
+
 ## 插件工具
 * [tool](tool.md)	
 
