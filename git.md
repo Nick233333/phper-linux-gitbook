@@ -21,9 +21,11 @@ git add file #添加文件
 
 git add . #添加当前目录下所有文件到版本库
 
-git add -A ##添加所有文件到版本库
+git add -A #添加所有文件到版本库
 
 git commit -m '注释' #提交
+
+git push #推送到仓库
 
 ```
 
