@@ -14,7 +14,7 @@
 * [file-dir-permissions](file-dir-permissions.md)
 
 ## 查找搜索相关
-* [find-search](find-search.md)	
+* [find-grep-which-whereis-locate](find-grep-which-whereis-locate.md)	
 
 ## 查看编辑相关
 * [cat-less-more-tail-head-vim](cat-less-more-tail-head-vim.md)
