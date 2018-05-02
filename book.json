@@ -19,9 +19,13 @@
 	    "toggle-chapters",
 	    "sharing-plus",
 		"search",
-		"search-pro"
+		"search-pro",
+		"baidu"
 	],
 	"pluginsConfig": {
+		"baidu": {
+            "token": "05e74883e1b59d73b500efaacbf8ce69"
+        },
 		"sitemap": {
             		"hostname": "http://linux.hellocode.name"
 	        },
