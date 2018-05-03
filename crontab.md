@@ -10,7 +10,7 @@ Linux下的任务调度分为两类：系统任务调度和用户任务调度。
 
 `/etc/cron.allow`    该文件中所列用户允许使用 `crontab` 命令,默认不存在
 
-`/var/spool/cron/`   所有用户 `crontab` 文件存放的目录,以用户名命名
+`/var/spool/cron/`   所有用户 `crontab` 文件存放的目录，以用户名命名
 
 ```
 crontab -l #显示定时任务列表
