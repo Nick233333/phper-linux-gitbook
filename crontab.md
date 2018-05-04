@@ -13,13 +13,13 @@ Linux下的任务调度分为两类：系统任务调度和用户任务调度。
 
 用户任务调度：用户定期要执行的工作，比如用户数据备份、定时邮件提醒等。
 
-`/etc/cron.deny`     该文件中配置用户不允许使用 `crontab` 命令，亲测 Ubuntu16.04 默认不存在，CentOS7.2 存在，如果要禁止某个用户不能使用 `crontab` ，在此文件写入用户名即可，仅对普通用户生效，`root` 用户无效。
+`/etc/cron.deny`     该文件中配置用户不允许使用 `crontab` 命令，亲测 `Ubuntu16.04` 默认不存在，`CentOS7.2` 存在，如果要禁止某个用户不能使用 `crontab` ，在此文件写入用户名即可，仅对普通用户生效，`root` 用户无效。
 
-`/etc/cron.allow`    该文件中配置用户允许使用 `crontab` 命令，亲测 Ubuntu16.04 、CentOS7.2 默认不存在。
+`/etc/cron.allow`    该文件中配置用户允许使用 `crontab` 命令，亲测 `Ubuntu16.04` 、`CentOS7.2` 默认不存在。
 
 > 系统读取顺序为先读取 /etc/cron.deny 文件，再读取 /etc/cron.allow 文件
 
-`/var/spool/cron/`   所有用户 `crontab` 文件存放的目录，以用户名命名，CentOS 系统。
+`/var/spool/cron/`   所有用户 `crontab` 文件存放的目录，以用户名命名，`CentOS` 系统。
 
 ```
 crontab -l #显示定时任务列表
@@ -73,8 +73,8 @@ Select an editor.  To change later, run 'select-editor'.
 
 */1 * * * * run-parts /root/sh/ #每分钟执行 /root/sh/ 目录内的脚本，CentOS 系统生效，Ubuntu 系统不生效，原因暂时未知。
 ```
-crontab 里面指定的命令建议写绝对路径，文件相对路径和绝对路径都可以。
-run-parts 可以指定任意目录执行,路径可以为相对路径也可以为绝对路径, CentOS 系统该命令位置 `/usr/bin/run-parts` ，Ubuntu 系统该命令位置 `/bin/run-parts` 。
+`crontab` 文件里面指定的命令建议写绝对路径，文件相对路径和绝对路径都可以。
+`run-parts` 可以指定任意目录执行,路径可以为相对路径也可以为绝对路径, `CentOS` 系统该命令位置 `/usr/bin/run-parts` ，`Ubuntu` 系统该命令位置 `/bin/run-parts` 。
 
 日志
 
