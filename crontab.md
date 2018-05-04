@@ -4,6 +4,13 @@ Linux下的任务调度分为两类：系统任务调度和用户任务调度。
 
 系统任务调度：系统周期性所要执行的工作，比如写缓存数据到硬盘、日志清理等。在 `/etc` 目录下有一个 `crontab` 文件，这个就是系统任务调度的配置文件。
 
+系统任务调度存放的目录
+
+- /etc/cron.hourly  小时
+- /etc/cron.daily   每天
+- /etc/cron.weekly  每周
+- /etc/cron.monthly 每月
+
 用户任务调度：用户定期要执行的工作，比如用户数据备份、定时邮件提醒等。
 
 `/etc/cron.deny`     该文件中配置用户不允许使用 `crontab` 命令，亲测 Ubuntu16.04 默认不存在，CentOS7.2 存在，如果要禁止某个用户不能使用 `crontab` ，在此文件写入用户名即可，仅对普通用户生效，`root` 用户无效。
@@ -64,15 +71,10 @@ Select an editor.  To change later, run 'select-editor'.
 
 10 * * * 1-5 root /usr/local/bin/php /home/ubuntu/demo.php #周一到周五第10分钟以 root 用户 php 命令去执行一次 demo.php 文件
 
-01 * * * * root run-parts /etc/cron.hourly #每小时第1分钟执行 /etc/cron.hourly 目录内的脚本
+*/1 * * * * run-parts /root/sh/ #每分钟执行 /root/sh/ 目录内的脚本，CentOS 系统，，Ubuntu 系统不生效，原因暂时未知。
 ```
-
-run-parts 参数指定的目录必须是以下任意一个，其他位置的目录无法执行
-
-- /etc/cron.hourly  小时
-- /etc/cron.daily   每天
-- /etc/cron.weekly  每周
-- /etc/cron.monthly 每月
+crontab 里面指定的命令建议写绝对路径，文件相对路径和绝对路径都可以。
+run-parts 可以指定任意目录执行,路径可以为相对路径也可以为绝对路径, CentOS 系统该命令位置 `/usr/bin/run-parts` ，Ubuntu 系统该命令位置 `/bin/run-parts` 。
 
 日志
 
