@@ -10,8 +10,9 @@ scp id_rsa.pub root@ip地址:文件保存路径
 cat id_rsa.pub >> /root/.ssh/authorized_keys 追加到文件中
 
 ```
+> 如果 .shh 目录或 authorized_keys 文件不存在需要自己新建
 
-第三步，修改服务器端 ssh 配置文件 sshd_config
+第三步，修改服务器端 ssh 配置文件 /etc/ssh/sshd_config
 
 ```
 RSAAuthentication yes #开启RSA验证
@@ -20,7 +21,7 @@ PasswordAuthentication no #禁止使用密码验证登录
 chmod 600 /root/.ssh/authorized_keys  #为了安全把文件修改权限
 ```
 
-第四步，服务器端重启ssh服务
+第四步，服务器端重启 ssh 服务
 ```
 service sshd restart #重启 sshd 服务
 ```
