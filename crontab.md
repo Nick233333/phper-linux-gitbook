@@ -71,3 +71,19 @@ run-parts 参数指定的目录必须是以下任意一个，其他位置的目�
 - /etc/cron.daily   每天
 - /etc/cron.weekly  每周
 - /etc/cron.monthly 每月
+
+日志
+
+CentOs7.2 crontab 日志路径为 `/var/log/cron`
+
+Ubuntu16.04 crontab 日志路径为 `/var/log/cron.log`
+
+Ubuntu16.04 默认不生成 crontab 日志，需要更改配置，方法如下
+
+```
+sudo vim /etc/rsyslog.d/50-default.conf 
+
+cron.*              /var/log/cron.log #将cron前面的 # 注释符去掉
+
+sudo service rsyslog restart
+```
