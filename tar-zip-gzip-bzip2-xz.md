@@ -12,7 +12,7 @@ tar -xjvf filename.tar.bz2 #解压使用gzip2压缩并显示文件信息
 ```
 补充：`-v` 为显示信息
 
-#### zip 压缩命令,文件后缀.zip
+#### zip 压缩命令，文件后缀.zip
 
 ```
 zip html.zip ./html #压缩当前目录下html目录或文件
@@ -28,7 +28,7 @@ unzip -o html.zip -d /usr/local/ #解压html.zip文件到/usr/local/下
 zip -qr html.zip ./html #将当前html目录递归压缩为html.zip
 ```
 
-#### gzip 压缩命令,文件后缀.gz
+#### gzip 压缩命令，文件后缀.gz
 
 ```
 gzip index.php #压缩index.php文件,文件名为index.php.gz，不会保留原文件
@@ -39,7 +39,7 @@ gzip -d index.php.gz #解压文件
 
 ```
 
-#### bzip2 压缩命令,文件后缀.bz2
+#### bzip2 压缩命令，文件后缀.bz2
 
 ```
 bzip2 index.php #压缩index.php文件,文件名为index.php.bz2，不会保留原文件
