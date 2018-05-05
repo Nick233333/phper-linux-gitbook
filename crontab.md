@@ -17,7 +17,7 @@ __Linux下的任务调度分为两类：系统任务调度和用户任务调度�
 
 `/etc/cron.allow`    该文件中配置用户允许使用 `crontab` 命令，亲测 `Ubuntu16.04` 、`CentOS7.2` 默认不存在。
 
-> 系统读取顺序为先读取 /etc/cron.deny 文件，再读取 /etc/cron.allow 文件
+> 系统读取顺序为先读取 /etc/cron.deny 文件，再读取 /etc/cron.allow 文件，建议保留任意一个文件即可，内容为一个用户名称一行。
 
 `/var/spool/cron/`   所有用户 `crontab` 文件存放的目录，以用户名命名，`CentOS` 系统。
 
