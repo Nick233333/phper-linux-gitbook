@@ -4,9 +4,11 @@
 ```
 ssh-keygen -t rsa #生成的公钥匙在 ~/.ssh/ 目录下
 ```
-第二步，把公钥上传到服务器端
+第二步，把公钥上传到服务器端，登录服务器追加公钥到 authorized_keys 文件
 ```
 scp id_rsa.pub root@ip地址:文件保存路径
+ssh root@ip #登录服务器
+cd id_rsa.pub 文件保存路径
 cat id_rsa.pub >> /root/.ssh/authorized_keys 追加到文件中
 
 ```
@@ -18,7 +20,8 @@ cat id_rsa.pub >> /root/.ssh/authorized_keys 追加到文件中
 RSAAuthentication yes #开启RSA验证
 PubkeyAuthentication yes #是否使用公钥验证
 PasswordAuthentication no #禁止使用密码验证登录
-chmod 600 /root/.ssh/authorized_keys  #为了安全把文件修改权限
+chmod 700 /root/.ssh/     #为了安全把文件修改权限，可选，部分系统新建即为 700
+chmod 600 /root/.ssh/authorized_keys  #为了安全把文件修改权限，可选，部分系统新建即为 600
 ```
 
 第四步，服务器端重启 ssh 服务
@@ -59,3 +62,29 @@ sudoi ptables -L -n --line-numbers #将所有iptables以序号标记显示
 
 sudo iptables -D INPUT 8 #删除INPUT里序号为8的规则
 ```
+
+---
+
+#### 自定义 ssh 登录
+
+在 `.ssh` 目录下新建 `config` 文件，内容如下
+
+```
+Host test1           #自定义名称
+HostName ip          #服务器 ip 地址
+User nick            #用户名
+Port 22              # ssh 端口号，默认 22 可以不设置
+
+Host test2           #自定义名称
+HostName ip          #服务器 ip 地址
+User nick            #用户名
+Port 22228           # ssh 端口，自定义端口，修改为指定端口号
+```
+
+连接方式
+
+```
+ssh test1 #如果配置了公私钥就直接登录，没有的话输入密码登录
+```
+
+

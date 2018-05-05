@@ -1,6 +1,6 @@
 #### crontab 命令
 
-Linux下的任务调度分为两类：系统任务调度和用户任务调度。
+__Linux下的任务调度分为两类：系统任务调度和用户任务调度。__
 
 系统任务调度：系统周期性所要执行的工作，比如写缓存数据到硬盘、日志清理等。在 `/etc` 目录下有一个 `crontab` 文件，这个就是系统任务调度的配置文件。
 
@@ -31,7 +31,7 @@ crontab -r #删除定时任务
 sudo crontab -u root -e #指定 root 用户编辑，每个用户对应有一个 crontab 文件
 ```
 
-crontab 文件内容说明
+__crontab 文件内容说明__
 
 ```
 Minute Hour Day Month Week command
@@ -60,7 +60,7 @@ Select an editor.  To change later, run 'select-editor'.
 
 ```
 
-例子
+__例子__
 
 ```
 */1 * * * * ~/http.sh #每1分钟执行一次 ~/http.sh shell 文件
@@ -71,14 +71,24 @@ Select an editor.  To change later, run 'select-editor'.
 
 10 * * * 1-5 root /usr/local/bin/php /home/ubuntu/demo.php #周一到周五第10分钟以 root 用户 php 命令去执行一次 demo.php 文件
 
-*/1 * * * * run-parts /root/sh/ #每分钟执行 /root/sh/ 目录内的脚本，CentOS 系统生效，Ubuntu 系统不生效，原因暂时未知。
+*/1 * * * * run-parts /home/nick/sh/ #每分钟执行 /home/nick/sh/ 目录内的脚本，CentOS 系统生效，Ubuntu 系统不生效，原因暂时未知。
 ```
 `crontab` 文件里面指定的命令建议写绝对路径，文件相对路径和绝对路径都可以。
 `run-parts` 可以指定任意目录执行,路径可以为相对路径也可以为绝对路径, `CentOS` 系统该命令位置 `/usr/bin/run-parts` ，`Ubuntu` 系统该命令位置 `/bin/run-parts` 。
 
-日志
+__crontab 日志__
 
 CentOS7.2 crontab 日志路径为 `/var/log/cron`
+
+CentOS 系统 crontab 执行成功日志会出现以下内容
+
+```
+May  5 11:48:01 10-13-41-254 CROND[10770]: (nick) CMD (run-parts /home/nick/sh)
+May  5 11:48:01 10-13-41-254 run-parts(/home/nick/sh)[10770]: starting 1.sh
+May  5 11:48:01 10-13-41-254 run-parts(/home/nick/sh)[10777]: finished 1.sh
+May  5 11:48:01 10-13-41-254 run-parts(/home/nick/sh)[10770]: starting 2.sh
+May  5 11:48:01 10-13-41-254 run-parts(/home/nick/sh)[10783]: finished 2.sh
+```
 
 Ubuntu16.04 crontab 日志路径为 `/var/log/cron.log`
 
@@ -90,4 +100,11 @@ sudo vim /etc/rsyslog.d/50-default.conf
 cron.*              /var/log/cron.log #将cron前面的 # 注释符去掉
 
 sudo service rsyslog restart
+```
+
+Ubuntu 系统 crontab 执行成功日志会出现以下内容
+
+```
+May  5 11:37:01 localhost CRON[26565]: (root) CMD (/root/sh/1.sh)
+May  5 11:38:01 localhost CRON[26677]: (root) CMD (/usr/local/qcloud/stargate/admin/start.sh > /dev/null 2>&1 &)
 ```
