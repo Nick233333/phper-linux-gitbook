@@ -36,6 +36,7 @@
 
 ## 其他
 * [other](other.md)
+* [常用配置](常用配置.md)
 
 ## PHP 依赖工具
 * [composer](composer.md)
