@@ -96,9 +96,11 @@ time ls #统计执行命令的时间
 
 real	0m0.002s #命令执行开始到结束的时间
 user	0m0.002s #进程花费在用户模式中的时间
-sys	    0m0.000s #在内核模式中的时间
+sys	 0m0.000s #在内核模式中的时间
 
 /usr/bin/time -o output.log ls #将执行时间写入文件日志
 
-/usr/bin/time -a -o outfile.txt ls #以追加的形式将执行时间写入日志文件
+/usr/bin/time -ao outfile.txt ls #以追加的形式将执行时间写入日志文件
 ```
+
+补充：`-a` 选项必须在 `-o` 前面，否则执行不成功
