@@ -88,3 +88,17 @@ echo hello linux #输出字符串
 
 echo $my_name #输出变量值
 ```
+
+#### time 命令
+
+```
+time ls #统计执行命令的时间
+
+real	0m0.002s #命令执行开始到结束的时间
+user	0m0.002s #进程花费在用户模式中的时间
+sys	    0m0.000s #在内核模式中的时间
+
+/usr/bin/time -o output.log ls #将执行时间写入文件日志
+
+/usr/bin/time -a -o outfile.txt ls #以追加的形式将执行时间写入日志文件
+```
