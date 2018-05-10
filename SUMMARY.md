@@ -28,6 +28,9 @@
 ## 软件包管理器
 * [apt-get-yum](apt-get-yum.md)	
 
+## 网络请求与下载
+* [wget-curl](wget-curl.md)	
+
 ## 防火墙
 * [firewall](firewall.md)	
 
