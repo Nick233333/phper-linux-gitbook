@@ -108,56 +108,70 @@ sys	 0m0.000s #在内核模式中的时间
 #### login 命令
 
 ```
-
+login nick #当前用户切换到 nick 登录
 ```
 
 #### logout 命令
 
 ```
-
+logout #以当前用户退出登录
 ```
 
 #### exit 命令
 
 ```
-
+exit #退出登录或登录当前 shell 脚本
 ```
 
 #### clear 命令
 
 ```
-
+clear #清除屏幕内容
 ```
 
 #### alias 命令
 
 ```
-
+alias gs="git status" #给  git status 起别名为 gs，仅在当前环境生效，关闭终端或退出登录以后无效，一般配置在当前 shell 的配置文件中
 ```
 
 #### unalias 命令
 
 ```
-
+unadlias gs #取消命令别名
 ```
 
 #### type 命令
 
 ```
-
+type pwd #查看命令的类型
 ```
 
 
 #### w 命令
 
 ```
+w #查看当前登录系统的用户
+```
 
+#### mesg 命令
+
+```
+mesg y #允许终端接收信息
+
+mesg n #禁止终端接收信息
 ```
 
 #### write 命令
 
 ```
+write root #向 `root` 用户发送消息，实时的，用户必须登录服务器状态并且 `mesg` 设置为 `y` 才可以接收到，输入信息之后按 `control +d`  
+```
 
+#### wall 命令
+
+```
+wall #向所有在线的用户发送消息，输入信息之后按 `control +d` 发送，`mesg` 设置为 `y` 才可以接收到
 ```
 
 #### sort 命令
