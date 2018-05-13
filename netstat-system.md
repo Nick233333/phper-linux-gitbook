@@ -1,14 +1,19 @@
 #### uptime 命令
 
 ```
-
+uptime #显示信息依次为：当前时间、系统运行时间、目前登录用户、系统在 1 分钟、5 分钟和 15 分钟内的负载。
 ```
 
 #### free 命令
 
 ```
+free -m #以 mb 统计系统内存
 
+free -k #以 kb 统计系统内存
 ```
+
+补充：total：总内存，used：已使用内存，free：空闲的内存，shared 当前已经废弃不用，buff/cache 缓存内存，available 可用内存
+
 
 #### du 命令
 
