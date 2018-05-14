@@ -12,6 +12,8 @@
 	        "website": "styles/website.css"
 	},
 	"plugins": [
+		"github",
+		"edit-link",
 	    "donate",
 	    "sitemap",
 	    "-sharing",
@@ -22,6 +24,13 @@
 		"search-pro"
 	],
 	"pluginsConfig": {
+		"github": {
+            "url": "https://github.com/Nick233333/gitbook"
+		},
+		"edit-link": {
+            "base": "https://github.com/Nick233333/gitbook/blob/master/",
+            "label": "编辑本页面"
+        },
 		"sitemap": {
             		"hostname": "http://linux.hellocode.name"
 	        },
