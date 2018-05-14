@@ -15,7 +15,9 @@ git help config #获取帮助信息
 普通操作
 
 ```
-git status #查看文件状态
+git status #查看已添加到暂存区文件状态
+
+git diff #查看未添加暂存区文件状态
 
 git add file #添加文件
 
