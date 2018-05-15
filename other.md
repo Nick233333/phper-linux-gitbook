@@ -180,4 +180,41 @@ wall #向所有在线的用户发送消息，输入信息之后按 `control +d` 
 ls /usr | sort #排序
 ```
 
+#### nohup 命令
+
+```
+nohup node app.js & #将执行的结果不显示并在后台运行，默认会在执行命令当前目录插件 nohup.out ，如果 nohup.out 文件没有写入权限，会在 ~ 目录下新建
+
+nohup node app.js > demo.txt 2>&1 & #同上，指定写入文件名
+```
+
+
+#### tree 命令
+
+```
+tree /usr/local #以树状形式显示指定路径的目录和文件内容
+
+tree -d /usr/local #以树状形式显示指定路径目录内容
+```
+
+#### ln 命令
+
+```
+ln -s 目标文件 软连接
+
+ln -s /usr/local/php/bin/php /usr/local/bin/php #创建软连接，软连接被删除并不会影响源文件，源文件被删除软连接失效，只有文件才可以设置软连接，类似 Windows 系统的快捷方式
+```
+
+#### scp 命令
+
+```
+
+```
+
+#### rsync 命令
+
+```
+
+```
+
 
