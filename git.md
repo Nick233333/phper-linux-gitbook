@@ -57,7 +57,7 @@ git clone https://github.com/Nick233333/gitbook.git #克隆远程仓库
 git clone https://github.com/Nick233333/gitbook.git linux #克隆并指定目录名称
 ```
 
-日志
+__日志__
 
 ```
 git log #查看提交日志
@@ -94,7 +94,7 @@ git push origin :branch #删除远程分支
 
 ```
 
-标签
+__标签__
 
 ```
 git tag #列出现有标签

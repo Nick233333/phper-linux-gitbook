@@ -156,13 +156,17 @@ free -k #以 kb 统计系统内存
 #### ssh 命令
 
 ```
+ssh username@ip #远程登录服务器
 
+ssh -p 2222 username@ip #指定端口登录远程服务器
 ```
 
 #### ping 命令
 
 ```
+ping ip or domain name #使用 ICMP 协议测试服务器是否正常运行
 
+ping -c 2 ip #测试并设置返回的数据次数
 ```
 
 #### dig 命令
