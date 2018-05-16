@@ -1,6 +1,6 @@
-#### git 版本控制器
+#### Git 版本控制器
 
-配置
+__配置__
 
 ```
 git config --list  #查看配置的信息
@@ -12,7 +12,7 @@ git config --global user.email nick_php@163.com #设置邮箱
 git help config #获取帮助信息
 ```
 
-普通操作
+__普通操作__
 
 ```
 git status #查看已添加到暂存区文件状态
@@ -31,7 +31,7 @@ git push #推送到仓库
 
 ```
 
-新建仓库
+__新建仓库__
 
 ```
 mkdir www && cd www
@@ -49,7 +49,7 @@ git remote add origin git@github.com:username/project.git #关联远程仓库
 git push -u origin master #第一次推送文件到远程仓库
 ```
 
-克隆仓库
+__克隆仓库__
 
 ```
 git clone https://github.com/Nick233333/gitbook.git #克隆远程仓库
@@ -67,7 +67,7 @@ git log --pretty=oneline #单行显示提交日志
 git log --author=nick #查看指定用户的日志
 ```
 
-分支
+__分支__
 
 ```
 git branch #查看本地分支
@@ -114,7 +114,7 @@ git tag -d tag #删除本地 tag
 git push origin :tag #删除远程 tag
 ```
 
-关联远程仓库
+__关联远程仓库__
 
 ```
 git remote -v #查看全部远程仓库
