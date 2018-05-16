@@ -117,11 +117,11 @@ git push origin :tag #删除远程 tag
 关联远程仓库
 
 ```
-git remote  #查看全部远程仓库
+git remote -v #查看全部远程仓库
 
 git remote add origin https://github.com/Nick233333/gitbook.git #添加本地仓库与远程仓库关联
 
-git remote rename origin1 origin2 #重命名
+git remote rename origin github #重命名
 
 git remote remove origin #取消与远程仓库关联
 
