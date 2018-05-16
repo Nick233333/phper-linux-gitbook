@@ -208,13 +208,20 @@ ln -s /usr/local/php/bin/php /usr/local/bin/php #创建软连接，软连接被�
 #### scp 命令
 
 ```
+scp demo.php username@ip:path #将本地文件复制在远程服务器
 
+scp -r dirname username@ip:path #将本地命令复制到远程服务器
+
+scp [-P 端口号] xxx username@ip:path #指定端口号
+
+scp username@ip:path/filename ./ #将远程服务器上的文件复制到本地
+
+scp -r username@ip:path/dirname ./ #将远程服务器上的目录复制到本地
+
+scp [-P 端口号] [-r] username@ip:path/ ./
 ```
 
-#### rsync 命令
+补充：`-P` 指定端口，`-r` 递归
 
-```
-
-```
 
 
