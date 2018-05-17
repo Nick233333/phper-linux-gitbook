@@ -8,6 +8,10 @@ touch index.html #新建空文件
 
 ```
 mkdir demo #创建目录
+
+mkdir -p ~/php/laravel #递归创建目录
+
+mkdir -m 755 www #创建目录并指定权限
 ```
 
 #### rmdir 命令
