@@ -188,7 +188,6 @@ nohup node app.js & #将执行的结果不显示并在后台运行，默认会�
 nohup node app.js > demo.txt 2>&1 & #同上，指定写入文件名
 ```
 
-
 #### tree 命令
 
 ```
