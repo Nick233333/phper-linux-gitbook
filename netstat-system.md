@@ -46,15 +46,29 @@ lsb_release -a #查看系统版本信息
 #### top 命令
 
 ```
+top #查看资源占用比
 
+第一行：系统当前时间 系统持续时间 登录用户1,5,15分钟之前的平均负载
+第二行：进程总数
+第三行：CPU占用率 %id	空闲百分比
+第四行：内存使用： 总共 使用 空闲 缓存
+第五行：swap使用
+
+top -p 6297 #查看指定 pid 信息
+
+top -u root #查看指定用户的进程
 ```
 
 
 #### netstat 命令
 
 ```
+netstat  -tuln  #查看本机所有监听端口
 
+netstat  -an #查看所有网络连接
 ```
+
+补充：`t` 代表 `tcp` ， `u` 代表 `udp` ，`l` 代表监听，`n` 代表以 IP 和端口号显示。
 
 #### ps 命令
 
@@ -62,6 +76,9 @@ lsb_release -a #查看系统版本信息
 ps -aux #查看系统所有进程，以 BSD 系统格式显示
 
 ```
+
+补充：`a` 代表显示前台所有进程，`u` 显示用户名，`x`	显示后台进程。
+
 
 #### pstree 命令
 
@@ -100,6 +117,7 @@ pkill -9 5679 #强制杀死 pid 为 5679 的进程
 pkill -9 -t pts/1 #强制踢远程终端用户下线
 ```
 
+补充：超级管理员可以踢任何人，普通用户只能踢自己。
 
 #### ip 命令
 
@@ -110,38 +128,73 @@ pkill -9 -t pts/1 #强制踢远程终端用户下线
 #### ifconfig 命令
 
 ```
-
+ifconfig  #查看网卡信息
 ```
 
 
 #### route 命令
 
 ```
+route #查看路由
+
+route -n  #查看网关
 
 ```
 
 #### env 命令
 
 ```
-
+env #查看当前用户的系统环境变量信息
 ```
 
 #### systemctl 命令
 
 ```
+systemctl start nginx #开启 nginx 服务
 
+systemctl stop nginx #关闭 nginx 服务
+
+systemctl restart nginx #重启 nginx 服务
+
+systemctl reload nginx #重新加载 nginx 服务
+
+systemctl status nginx #查看 nginx 服务
+
+systemctl enable nginx #设置开启自启动
+
+systemctl disable nginx #关闭开机自启动
+
+systemctl list-units --type=service #查看已启动的服务
 ```
 
 #### service 命令
 
 ```
+service mysqld start #开启 mysql 服务
 
+service mysqld stop #关闭 mysql 服务
+
+service mysqld restart #重启 mysql 服务
+
+service mysqld reload #重新加载 mysql 服务
+
+service mysqld force-reload #强制加载 mysql 服务
+
+service mysqld status #查看 mysql 服务
 ```
 
 #### chkconfig 命令
 
 ```
+chkconfig --list #查看所有的系统服务
 
+chkconfig --list xxx #查看某个服务的设置信息
+
+chkconfig --add xxx #添加系统服务
+
+chkconfig --del xxx #删除系统服务
+
+chkconfig xxx on #设置开机自启动
 ```
 
 #### uname 命令
