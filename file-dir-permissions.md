@@ -62,7 +62,7 @@ chmod -R 755 dirname #递归修改目录的权限
 ```
 chown nick index.php #将文件拥有者改为 nick
 
-shown :nick index.php #将文件用户组修改为 nick
+chown :nick index.php #将文件用户组修改为 nick
 
 chown nick:nick index.php #将文件拥有者和用户组修改为 nick
 
