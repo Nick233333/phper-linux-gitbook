@@ -8,3 +8,11 @@
 li.chapter {
     padding-left: 20px;
 }
+
+.book-summary {
+    font-size: 1.2rem;
+}
+
+.book-body {
+    font-size: 1.5rem;
+}
