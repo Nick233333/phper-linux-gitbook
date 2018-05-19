@@ -51,7 +51,7 @@
 * [git](git.md)
 
 ## 插件工具
-* [tool](tool.md)	
+* [工具](tool.md)	
 
 ## shell 脚本
 * [shell](shell.md)	
