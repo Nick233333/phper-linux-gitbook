@@ -29,6 +29,16 @@ git commit -m '注释' #提交
 
 git push #推送到仓库
 
+git reset --hard #回滚到上版本
+
+git reset --hard af442cb672b02cdfca1fcb #回滚到指定的版本
+
+git checkout . #恢复暂存区的所有文件到工作区
+
+git checkout file #恢复暂存区的指定文件到工作区
+
+git checkout af442cb672b02cdfca1fcb index.php 恢复某个commit的指定文件到暂存区和工作区
+
 ```
 
 __新建仓库__
@@ -65,6 +75,8 @@ git log #查看提交日志
 git log --pretty=oneline #单行显示提交日志
 
 git log --author=nick #查看指定用户的日志
+
+git log -p filename #查看文件每次提交的修改部分
 ```
 
 __分支__
