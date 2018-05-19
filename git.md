@@ -37,7 +37,7 @@ git checkout . #恢复暂存区的所有文件到工作区
 
 git checkout file #恢复暂存区的指定文件到工作区
 
-git checkout af442cb672b02cdfca1fcb index.php 恢复某个commit的指定文件到暂存区和工作区
+git checkout af442cb672b02cdfca1fcb index.php 恢复某个 commit 的指定文件到暂存区和工作区
 
 ```
 
