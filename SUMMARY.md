@@ -35,7 +35,7 @@
 * [wget-curl](wget-curl.md)	
 
 ## 防火墙
-* [firewall](firewall.md)	
+* [iptables](iptables.md)	
 
 ## 定时任务
 * [crontab](crontab.md)
