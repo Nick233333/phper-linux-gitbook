@@ -272,5 +272,9 @@ whois baidu.com #查看域名信息
 
 ```
 hostname #查看主机名称
+
+hostname -i #查看主机 IP
+
+hostname –d #查看主机域名
 ```
 
