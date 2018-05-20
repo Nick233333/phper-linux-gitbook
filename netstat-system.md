@@ -202,7 +202,7 @@ uname -r #打印系统版本号
 unmae -a #打印全部内核信息
 ```
 
-#### rboot 命令
+#### reboot 命令
 
 ```
 reboot #重启系统
