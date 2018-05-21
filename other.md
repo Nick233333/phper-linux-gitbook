@@ -222,5 +222,13 @@ scp [-P 端口号] [-r] username@ip:path/ ./
 
 补充：`-P` 指定端口，`-r` 递归
 
+#### source 命令
+
+```
+source .zshrc #加载配置
+
+source demo.sh #运行 shell 脚本
+```
+
 
 
