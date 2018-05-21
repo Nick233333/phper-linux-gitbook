@@ -2,6 +2,8 @@
 
 ```
 cat demo.php #在屏幕上显示 demo.php 文件的内容
+
+cat -n demo.php #查看文件内容并从 1 开始添加序号
 ```
 
 #### less 分屏显示文件内容

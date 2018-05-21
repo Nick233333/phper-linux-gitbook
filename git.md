@@ -29,6 +29,10 @@ git commit -m '注释' #提交
 
 git push #推送到仓库
 
+git pull #拉取当前分支仓库最新代码
+
+git pull dev #拉取指定分支的代码与本地分支合并
+
 git reset --hard #回滚到上版本
 
 git reset --hard af442cb672b02cdfca1fcb #回滚到指定的版本
