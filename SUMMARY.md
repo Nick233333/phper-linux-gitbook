@@ -57,6 +57,11 @@
 * [shell](shell.md)	
 
 ## 实用 shell 例子
-* [demo](demo.md)		
+* [demo](demo.md)	
+
+## 参考资料
+* [书籍](http://billie66.github.io/TLCL/book/)	
+* [网站](http://www.ywnds.com/)
+* [网站](http://man.linuxde.net/)
 
 
