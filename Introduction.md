@@ -1,6 +1,6 @@
 ## Linux 是什么
 
-`Linux` 是一个开源系统内核，1991年由托瓦兹 (Linus Torvalds) 开发出来的，我们平时讲的 `Liunx` 系统其实并不是很准确，`Ubuntu` `CentOS` 这些才是系统，`Linux` 是参考 `Uinx` 系统开发出来的。
+`Linux` 是一个开源系统内核，1991年由托瓦兹 (Linus Torvalds) 开发出来的，我们平时讲的 `Liunx` 系统其实并不是很准确，`Ubuntu` `CentOS` 这些才是系统，`Linux` 是参考 `Unix` 系统开发出来的。
 
 现实生活中有哪些软件或系统是基于 `Linux` 开发出来的呢？ `嵌入式` 程序开发 `Android` 手机系统，我们经常浏览的网站服务器，基本都是运行 `Linux` 系统之上。
 
