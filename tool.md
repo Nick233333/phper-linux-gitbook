@@ -16,3 +16,7 @@
 - __`mycli` MySQL 命令行工具，具有高亮提示__
 
 - __`shellcheck` Shell 脚本语法检查提示__
+
+- __`namp` 网络嗅探工具__
+
+- __`sqlmap` 数据扫描工具__
