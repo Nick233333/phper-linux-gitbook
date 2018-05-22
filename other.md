@@ -230,5 +230,13 @@ source .zshrc #加载配置
 source demo.sh #运行 shell 脚本
 ```
 
+#### ab 命令
+
+```
+ab -c 100 -n 200 'url' #压力测试
+```
+
+补充：`c` 代表并发数量 `n` 代表请求数量
+
 
 
