@@ -19,7 +19,7 @@
 ## 查看编辑相关
 * [cat-less-more-tail-head-vim](cat-less-more-tail-head-vim.md)
 
-## Linux 文本编辑三剑客
+## 文本编辑三剑客
 * [grep-sed-awk](grep-sed-awk.md)
 
 ## 网络与系统资源
@@ -45,16 +45,16 @@
 * [常用配置](常用配置.md)
 
 ## PHP 依赖工具
-* [composer](composer.md)
+* [Composer](composer.md)
 
 ## 版本控制器
-* [git](git.md)
+* [Git](git.md)
 
 ## 插件工具
 * [工具](tool.md)	
 
-## shell 脚本
-* [shell](shell.md)	
+## Shell 脚本
+* [Shell](shell.md)	
 
 ## 实用 shell 例子
 * [demo](demo.md)	
