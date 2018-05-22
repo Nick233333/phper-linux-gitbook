@@ -56,13 +56,19 @@ users #查看当前在线的用户
 #### sudo 命令
 
 ```
-
+sudo vim /etc/passwd #以另一个用户身份执行命令，通常是 root 用户
 ```
+
+补充：普通用户添加执行 `sudo` 的方法，在 `/etc/sudoers` 文件中添加 `username ALL=(ALL) ALL` 即可。
 
 #### su 命令
 
 ```
+su   #切换到 root 用户，仅切换路径
 
+su - #切换到 root 用户，环境变量和路径一起切换
+
+su - nick #切换到 nick 用户，环境变量和路径一起切换
 ```
 
 #### whoami 命令
