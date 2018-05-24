@@ -278,3 +278,9 @@ hostname -i #查看主机 IP
 hostname –d #查看主机域名
 ```
 
+#### runlevel 命令
+
+```
+runlevel #查看系统运行级别
+```
+
