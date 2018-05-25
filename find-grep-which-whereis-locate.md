@@ -7,7 +7,7 @@ sudo find /usr/local/nginx -iname nginx.conf #在 /usr/local/nginx 下查找 ngi
 
 sudo find /home/ ! -name "*.gz" #查找不是 .gz 后缀的文件
 
-sudo find /home/  -iname demo.* #查找名称为 demo 开头的文件，不区分文件名称大小写
+sudo find /home/  -iname "demo.*" #查找名称为 demo 开头的文件，不区分文件名称大小写
 
 sudo find . -type f #查找文件类型为文件
 
