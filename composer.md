@@ -1,4 +1,4 @@
-#### composer php 软件包依赖管理器
+#### Composer php 软件包依赖管理器
 
 ```
 composer list #显示所有命令

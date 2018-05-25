@@ -17,7 +17,8 @@
 * [find-grep-which-whereis-locate](find-grep-which-whereis-locate.md)	
 
 ## 查看编辑相关
-* [cat-less-more-tail-head-vim](cat-less-more-tail-head-vim.md)
+* [cat-less-more-tail-head-vim](cat-less-more-tail-head-nl.md)
+* [Vim](vim.md)
 
 ## 文本编辑三剑客
 * [grep-sed-awk](grep-sed-awk.md)
@@ -33,6 +34,9 @@
 
 ## 网络请求与下载
 * [wget-curl](wget-curl.md)	
+
+## 备份与恢复
+* [dump-restore](dump-restore.md)	
 
 ## 防火墙
 * [iptables](iptables.md)	
