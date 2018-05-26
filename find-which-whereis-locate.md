@@ -27,18 +27,11 @@ sudo find . -type f -amin 10  #查找超过10分钟的访问文件
 
 sudo find . -type f -amin +10 #查找超过10分钟的访问文件
 ```
+
 补充：`+` 意思为大于，`-` 意思为小于，没有符合是等于。
 - 访问时间（-atime/天，-amin/分钟）：用户最近一次访问时间。
 - 修改时间（-mtime/天，-mmin/分钟）：文件最后一次修改时间。
 - 变化时间（-ctime/天，-cmin/分钟）：文件数据（包括权限等）最后一次修改时间。
-
-#### grep 命令
-
-```
-sudo grep -c '500' fielename.log #查找文件包含500的行数
-
-sudo cat index.html | grep -o 'js' #只输出文件中匹配到的部分
-```
 
 #### which 命令
 
