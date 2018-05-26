@@ -246,6 +246,16 @@ yes #不指定输出内容默认输出 y
 yes xxx #不断输出指定内容
 ```
 
+#### chsh 命令
+
+```
+chsh -l #查看系统 shell ，相当于 cat /etc/shells
+
+chsh -s /bin/zsh #更改当前用户的 shell ，更改完之后要重新登录才生效
+```
+
+补充：`Ubuntu` 系统没 `-l` 选项
+
 #### nmap 命令
 
 ```

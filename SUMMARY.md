@@ -14,10 +14,10 @@
 * [file-dir-permissions](file-dir-permissions.md)
 
 ## 查找搜索相关
-* [find-grep-which-whereis-locate](find-grep-which-whereis-locate.md)	
+* [find-which-whereis-locate](find-which-whereis-locate.md)	
 
 ## 查看编辑相关
-* [cat-less-more-tail-head-vim](cat-less-more-tail-head-nl.md)
+* [cat-less-more-tail-head-nl](cat-less-more-tail-head-nl.md)
 * [Vim](vim.md)
 
 ## 文本编辑三剑客
