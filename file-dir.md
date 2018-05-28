@@ -54,6 +54,12 @@ rm -f test #强制删除目录
 rm -rf php #强制递归删除目录
 ```
 
+#### unlink
+
+```
+unlink demo.php #删除文件，与 rm 类似，但只能删除文件
+```
+
 #### tree 命令
 
 ```

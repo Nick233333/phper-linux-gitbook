@@ -57,7 +57,7 @@
 ## 插件工具
 * [工具](tool.md)	
 
-## Shell 脚本
+## Shell 脚本相关命令
 * [Shell](shell.md)	
 
 ## 实用 shell 例子
