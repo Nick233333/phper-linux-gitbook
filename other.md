@@ -256,6 +256,14 @@ chsh -s /bin/zsh #更改当前用户的 shell ，更改完之后要重新登录�
 
 补充：`Ubuntu` 系统没 `-l` 选项
 
+#### tee 命令
+
+```
+ls ~ | tee test.txt #查看指定目录的内容并写入文件
+
+ls /usr/local/nginx | tee -a test.txt #查看并以追加的形式写入内容
+```
+
 #### nmap 命令
 
 ```
