@@ -50,3 +50,43 @@ fi
 ```
 
 补充：新建的 `shell` 脚本默认没有执行权限，需要自己添加
+
+---
+
+#### 获取文件名
+
+```
+#!/bin/bash
+
+file_jpg="sample.jpg"
+name=${file_jpg%.*}
+echo File name is: $name
+```
+
+---
+
+#### 获取文件扩展名
+
+```
+#!/bin/bash
+
+file="sample.png.text"
+echo ${file##*.} #贪婪模式，匹配到最后一个 .
+```
+
+---
+
+#### 重命名文件
+
+```
+#!/bin/bash
+
+count=1;
+for file in $(find . -maxdepth 1 -type f -iname '*.html')
+do
+    new_file=filename-$count.${file##*.}
+    echo "Renaming $file to $new_file"
+    mv "$file" "$new_file"
+    let count++
+done
+```
