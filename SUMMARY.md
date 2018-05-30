@@ -51,6 +51,9 @@
 ## PHP 依赖工具
 * [Composer](composer.md)
 
+## PHP 命令行模式
+* [PHP](php.md)
+
 ## 版本控制器
 * [Git](git.md)
 
