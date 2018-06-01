@@ -147,7 +147,6 @@ unadlias gs #取消命令别名
 type pwd #查看命令的类型
 ```
 
-
 #### w 命令
 
 ```
@@ -227,7 +226,7 @@ scp [-P 端口号] [-r] username@ip:path/ ./
 ```
 source .zshrc #加载配置
 
-source demo.sh #运行 shell 脚本
+source demo.sh #运行 shell 脚本，在 shell 脚本中代表引入文件
 ```
 
 #### ab 命令
