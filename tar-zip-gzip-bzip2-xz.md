@@ -1,6 +1,10 @@
 #### tar 打包压缩命令
 
 ```
+tar -cf php.tar php-7.2.6 #打包目录不压缩
+
+tar -xf php.tar #解压目录
+
 tar -czvf filename.tar.gz test #打包 test 目录并使用 gzip 压缩并显示文件信息
 
 tar -xzvf filename.tar.gz #解压 gzip 文件并输出文件信息
