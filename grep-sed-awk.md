@@ -35,5 +35,15 @@ sed -e 's/text//g' demo.php #打印并将文件内容 text 替换为空
 #### awk 命令
 
 ```
+awk '{print $9}' filename.log | grep 500 | wc -l #统计日志 500 状态码的数量
 
+awk '{print $1}' filename.log | grep 'ip' | wc -l #统计指定 IP 的访问次数
+
+awk '{a[b[$1]++]}END{for(i=length(a);i>0;i--)for(j in b)if(b[j]==i){c++;if(c<=10)print j,i}}' filename.log #统计访问前 10 的 IP 并输出访问数量
+
+awk '{print $7}' filename.log | grep 'url' | wc -l #统计指定 url 的访问次数
+
+sed "/Baiduspider/d;/Googlebot/d;/Sogou web spider/d;" filename.log | awk -F' ' '{print $7}' | sort | uniq -c | sort -k1,2 -nr #统计所有 url 访问次数，过滤搜索引擎的信息
 ```
+
+补充：$1 代表第一列，默认从 1 开始
