@@ -66,6 +66,8 @@ unlink demo.php #删除文件，与 rm 类似，但只能删除文件
 tree ~ #以树状图列出指定目录的内容
 
 tree -d laravel #以树状图列出指定目录的内容，不包括文件
+
+tree ~/test -H '目录结构' -o out.html --nolinks #将内容以树状形式写入到 HTML 文件中，不包含链接
 ```
 
 #### file 命令
