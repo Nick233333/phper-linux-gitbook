@@ -8,11 +8,21 @@ sudo cat index.html | grep -o 'js' #只输出文件中匹配到的部分
 ps -aux | grep sshd #查找指定访问
 
 ps -aux | grep 80 #查找指定端口
+
+echo hello world | grep -i "HELLO" #查找指定内容忽略大小写
+
+grep "sudo git pull" ~/test -R -n #递归查找指定目录下文件内容，如果找到返回文件名称，行号，查找到的内容
+
+grep "sudo git pull" . -r --exclude "gitbook.sh" #递归查找指定目录下文件内容，并忽略指定文件
+
+grep "sudo git pull" . -r --exclude-dir "test" #递归查找指定目录下文件内容，并忽略指定目录
 ```
 
 #### sed 命令
 
 ```
+sed '/^$/d' root.sh #打印文件内容删除掉空行
+
 sed -n '-p' demo.php #查看文件第 2 行
 
 sed '2d' demo.php #打印文件内容不显示第 2 行
