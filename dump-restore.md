@@ -1,3 +1,13 @@
+#### rsync 命令
+
+```
+rsync -avz /etc/ ~/etc.bak #将目录同步到另一个目录，目录后有 / 代表只同步目录内的数据，没有 / 代表包括目录本身
+
+rsync -avz source_dir username@host:PATH #同步数据到其他服务器
+
+rsync -av username@host:PATH destination #将远程主机的数据同步到本地
+```
+
 #### dump 命令
 
 ```
