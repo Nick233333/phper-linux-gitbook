@@ -239,7 +239,10 @@ shutdown -c #取消指定时间的关机或重启
 ```
 ssh username@ip #远程登录服务器
 
+ssh username@ip 'pwd' #连接服务器并执行命令将结果返回给本地
+
 ssh -p 2222 username@ip #指定端口登录远程服务器
+
 ```
 
 #### ping 命令
