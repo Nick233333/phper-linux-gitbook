@@ -21,6 +21,8 @@ grep "sudo git pull" . -r --exclude-dir "test" #递归查找指定目录下文�
 #### sed 命令
 
 ```
+sed -i '$d' root.sh #删除文件最后一行
+
 sed '/^$/d' root.sh #打印文件内容删除掉空行
 
 sed -n '-p' demo.php #查看文件第 2 行
@@ -40,7 +42,7 @@ sed 's/text/html/g' demo.php #打印并将文件内容 text 替换成 html
 sed -e 's/text//g' demo.php #打印并将文件内容 text 替换为空
 ```
 
-补充：`sed` 命令不会修改原文件内容
+补充：`sed` 命令不会修改原文件内容，除非使用 `-i` 选项
 
 #### awk 命令
 
