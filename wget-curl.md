@@ -48,6 +48,8 @@ curl url --limit-rate 20k  #限速
 
 curl url --max-filesize bytes #设置下载最大额度
 
+curl url -H 'HOST: 1.1.1.1' -H 'X-Real-IP: 2.2.2.2' #设置 http header
+
 curl -X GET www.baidu.com #指定请求方法，请求方法必须大写
 
 curl -C url #断点续传，适用网络不顺畅时下载大文件，无须重新下载
