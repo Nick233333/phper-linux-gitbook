@@ -12,6 +12,9 @@
 	        "website": "styles/website.css"
 	},
 	"plugins": [
+		"favicon",
+		"anchors",
+		"3-ba",
 		"-fontsettings",
 		"github",
 		"edit-link",
@@ -24,6 +27,17 @@
 		"search-pro"
 	],
 	"pluginsConfig": {
+		"favicon": {
+            "shortcut": "/images/favicon.ico",
+            "bookmark": "/images/favicon.png",
+            "appleTouch": "/images/favicon.png",
+            "appleTouchMore": {
+                "56x56": "/images/favicon.png"
+            }
+        },
+		"3-ba": {
+            "token": "05e74883e1b59d73b500efaacbf8ce69"
+        },
 		"github": {
             "url": "https://github.com/Nick233333/gitbook"
 		},
