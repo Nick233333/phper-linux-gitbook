@@ -275,5 +275,31 @@ nmap -sS -P0 -sV -O ip #查看主机系统信息
 
 ```
 
+#### readonly 命令
+
+```
+readonly name=demo #声明变量并将变量设置为只读，不允许修改删除
+
+address=china #声明变量
+
+readonly address #设置已存在的变量为只读
+
+readonly -p #查看只读变量列表
+
+readonly -a arr=(1,e,5) #数组类型的只读变量
+```
+
+#### enable 命令
+
+```
+enable #查看内置 shell 命令，只有列表内的命令可以设置禁用
+
+enable -n type #禁用 type 命令，设置之后执行 type 命令会提示命令不存在
+
+enable -pn #查看禁用的命令列表
+
+enable -a type #解除禁用
+```
+
 
 
