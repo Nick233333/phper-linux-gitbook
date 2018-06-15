@@ -87,10 +87,18 @@ chown -R nick:nick php #递归将目录拥有者和用户组修改为 nick
 chattr +i index.php #设置文件不允许修改、删除、移动、复制，root 用户也生效
 
 chattr -i index.php #取消文件属性设置
+
+chattr +i demo #设置目录属性，目录内的文件目录只能修改，不能新建与修改，子目录的文件目录不生效，目录层级只有一层
 ```
 
 #### lsattr 命令
 
 ```
-lsattr filename or dirname #查看文件或目录的属性
+lsattr filename  #查看文件属性
+
+lsattr -d demo #查看目录属性
+
+lsattr -R demo #递归查看目录属性
+
+lsattr -a demo #查看所有目录文件隐藏文件
 ```
