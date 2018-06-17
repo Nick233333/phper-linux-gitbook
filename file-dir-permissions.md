@@ -81,6 +81,29 @@ chown nick:nick php #将目录拥有者和用户组修改为 nick
 chown -R nick:nick php #递归将目录拥有者和用户组修改为 nick
 ```
 
+#### chgrp 命令
+
+```
+chgrp nick demo #改变目录的所属用户组
+
+chgrp nick test.php #改变文件的所属用户组
+
+chgrp -R nick demo #递归改变目录的所属用户组
+```
+
+#### umask 命令
+
+默认的补码为 022 ,补码越小权限越大，补码的计算规则为 rwx 读写执行即 777 减补码是权限数字
+root 的 umask 为 022 ，创建的目录或文件为 755 rwxr-xr-x 权限
+普通用户的 umask 为 002 ，创建的目录或文件为 775 rwxrwxr-x 权限
+最大权限减 umask 等于默认权限，结果为奇数，则奇数位 +1
+
+```
+umask #查看权限补码
+
+umask -S #查看当前用户权限补码
+```
+
 #### chattr 命令
 
 ```
