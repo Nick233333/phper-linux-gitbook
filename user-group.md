@@ -53,9 +53,9 @@ usermod -U demo #解除锁定
 ```
 userdel demo #删除用户，不删除用户家目录数据
 
-userdel -r #删除用户并删除用户家目录
+userdel -r demo #删除用户并删除用户家目录
 
-userdel -rf #强制删除用户并删除用户家目录
+userdel -rf demo #强制删除用户无论是否登录，并删除用户家目录
 ```
 #### passwd 目录
 
