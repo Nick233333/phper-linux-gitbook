@@ -266,6 +266,10 @@ ls /usr/local/nginx | tee -a test.txt #查看并以追加的形式写入内容
 #### nmap 命令
 
 ```
+nmap ip #查看开放端口
+
+nmap ip -p 端口 #查看指定端口是否开启
+
 nmap -sS -P0 -sV -O ip #查看主机系统信息
 ```
 

@@ -28,6 +28,8 @@ wget --user username --password pass url #认证
 #### curl 命令
 
 ```
+curl ifconfig.me #查看外网 IP
+
 curl www.baidu.com #请求指定网址并显示出来
 
 curl -o demo.html https://www.baidu.com/index.php #下载指定文件并重命名为 demo.html
