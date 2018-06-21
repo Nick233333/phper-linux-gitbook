@@ -287,6 +287,12 @@ hostname –d #查看主机域名
 runlevel #查看系统运行级别
 ```
 
+#### telnet 命令
+
+```
+telnet ip 端口 #测试指定 ip 的端口是否开放
+```
+
 #### jobs 命令
 
 ```
