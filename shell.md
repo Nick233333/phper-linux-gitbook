@@ -39,18 +39,31 @@ read -t 10 name #设置指定时间内输入，超时主动退出
 #### export 命令
 
 ```
+export demo=11111 #声明变量赋值并设置为环境变量
 
+host_name=ubuntu #声明变量
+
+export host_name #将已声明的变量设置为环境变量
 ```
 
 #### typeset 命令
 
 ```
+typeset -x nickname=1111 #设置变量为自定义环境变量
 
+typeset +x nickname #删除自定义环境变量
+
+typeset -r demo=aaa #设置变量在当前 shell 下为只读
 ```
 
 #### declare 命令
 
 ```
+declare -x username=abc #设置变量为自定义环境变量
+
+declare +x username #删除自定义环境变量
+
+declare -r test=bbb #设置变量在当前 shell 下为只读
 
 ```
 
