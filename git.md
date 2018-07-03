@@ -76,6 +76,8 @@ __日志__
 ```
 git log #查看提交日志
 
+git reflog #查看提交日志 git reset 回滚版本依然有日志，可以撤销回滚
+
 git log --pretty=oneline #单行显示提交日志
 
 git log --author=nick #查看指定用户的日志
@@ -95,6 +97,8 @@ git branch -a #查看所有分支
 git branch test #新建 test 分支
 
 git checkout -b dev ##新建 dev 分支并切换
+
+git checkout - #切换到上一个分支
 
 git checkout -b test dev #基于 dev 新建 test 分支，并切换
 
