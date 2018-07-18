@@ -305,5 +305,9 @@ enable -pn #查看禁用的命令列表
 enable -a type #解除禁用
 ```
 
+#### visudo 命令
 
+```
+visudo #打开编辑 /etc/sudoers 文件
+```
 

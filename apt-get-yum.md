@@ -18,6 +18,21 @@ apt-get upgrade #升级软件
 apt-get clean #清理所有软件缓存
 
 apt-get autoclean #清理旧版本的软件缓存
+
+apt-cahe search xxx #搜索可安装的软件
+
+apt-config dump #打印 apt-get 配置
+
+```
+
+### apt 命令
+
+Ubuntu 16.04 新添加的命令，将 `apt-get` `apt-cache` `apt-config` 命令常用的选项合并到一起，以下的新增的命令
+
+```
+apt list #查看已安装的软件
+
+apt edit-sources #快速编辑 apt 源
 ```
 
 补充：部分系统需要具有 `root` 权限的普通用户才能执行，在命令前加 `sudo` 即可。

@@ -4,12 +4,12 @@
 	"title" : "PHPer 必知必会的 Linux 命令",
 	"language": "zh-hans",
 	"links": {
-            "sidebar": {
-                "PHPer 必知必会的 Linux 命令": "https://linux.hellocode.name/"
-            }
+        "sidebar": {
+            "PHPer 必知必会的 Linux 命令": "https://linux.hellocode.name/"
+        }
 	},
 	"styles": {
-	        "website": "styles/website.css"
+	    "website": "styles/website.css"
 	},
 	"plugins": [
 		"favicon",
@@ -46,39 +46,39 @@
             "label": "编辑本页面"
         },
 		"sitemap": {
-            		"hostname": "http://linux.hellocode.name"
-	        },
+            "hostname": "http://linux.hellocode.name"
+	    },
 		"donate": {
-	        	"wechat": "https://wp.hellocode.name/wp-content/uploads/2017/12/reward_1513737335-200x200.jpg",
-	       		"alipay": "https://wp.hellocode.name/wp-content/uploads/2017/12/reward_1513737644-200x200.jpg",
-	       		"title": "",
-	        	"button": "赏",
-	        	"alipayText": "支付宝打赏",
-	        	"wechatText": "微信打赏"
-	    	},
+            "wechat": "https://wp.hellocode.name/wp-content/uploads/2017/12/reward_1513737335-200x200.jpg",
+            "alipay": "https://wp.hellocode.name/wp-content/uploads/2017/12/reward_1513737644-200x200.jpg",
+            "title": "",
+            "button": "赏",
+            "alipayText": "支付宝打赏",
+            "wechatText": "微信打赏"
+	    },
 		"sharing": {
-           		"douban": false,
-           		"facebook": false,
-           		"google": false,
-           		"hatenaBookmark": false,
-           		"instapaper": false,
-           		"line": false,
-           		"linkedin": false,
-           		"messenger": false,
-           		"pocket": false,
-           		"qq": false,
-           		"qzone": false,
-           		"stumbleupon": false,
-           		"twitter": true,
-           		"viber": false,
-           		"vk": false,
-           		"weibo": true,
-           		"whatsapp": false,
-           		"all": [
-               			"facebook", "twitter","weibo",
-				 "qq", "qzone"
-           		]
-       		}
+            "douban": false,
+            "facebook": false,
+            "google": false,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": false,
+            "qzone": false,
+            "stumbleupon": false,
+            "twitter": true,
+            "viber": false,
+            "vk": false,
+            "weibo": true,
+            "whatsapp": false,
+            "all": [
+                "facebook", "twitter","weibo",
+                "qq", "qzone"
+            ]
+        }
 	}
 
 }
