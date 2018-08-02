@@ -106,9 +106,13 @@ git merge test #将test分支合并到当前分支
 
 git branch -m old new #重命名分支
 
+git branch -M old new #强制重命名分支
+
 git push origin branch #推送分支到远程
 
-git branch -D branch #删除本地分支
+git branch -d branch #删除本地分支
+
+git branch -D branch #强制删除本地分支(当分支内容有修改并且已经 commit 时，分支没有合并，需要强制删除)
 
 git push origin :branch #删除远程分支
 
