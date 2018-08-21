@@ -184,7 +184,7 @@ ls /usr | sort #排序
 #### nohup 命令
 
 ```
-nohup node app.js & #将执行的结果不显示并在后台运行，默认会在执行命令当前目录插件 nohup.out ，如果 nohup.out 文件没有写入权限，会在 ~ 目录下新建
+nohup node app.js & #将执行的结果不显示并在后台运行，默认会在执行命令当前目录创建 nohup.out ，如果 nohup.out 文件没有写入权限，会在 ~ 目录下新建
 
 nohup node app.js > demo.txt 2>&1 & #同上，指定写入文件名
 ```
