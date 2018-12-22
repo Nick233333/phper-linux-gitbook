@@ -1,33 +1,33 @@
 {
-	"author": "Nick",
-	"description": "PHPer 必知必会的 Linux 命令",
-	"title" : "PHPer 必知必会的 Linux 命令",
-	"language": "zh-hans",
-	"links": {
+    "author": "Nick",
+    "description": "PHPer 必知必会的 Linux 命令",
+    "title" : "PHPer 必知必会的 Linux 命令",
+    "language": "zh-hans",
+    "links": {
         "sidebar": {
             "PHPer 必知必会的 Linux 命令": "https://linux.hellocode.name/"
         }
-	},
-	"styles": {
-	    "website": "styles/website.css"
-	},
-	"plugins": [
-		"favicon",
-		"anchors",
-		"3-ba",
-		"-fontsettings",
-		"github",
-		"edit-link",
-	    "donate",
-	    "sitemap",
-	    "-sharing",
-	    "splitter",
-	    "sharing-plus",
-		"search",
-		"search-pro"
-	],
-	"pluginsConfig": {
-		"favicon": {
+    },
+    "styles": {
+        "website": "styles/website.css"
+    },
+    "plugins": [
+        "favicon",
+        "anchors",
+        "3-ba",
+        "-fontsettings",
+        "github",
+        "edit-link",
+        "donate",
+        "sitemap",
+        "-sharing",
+        "splitter",
+        "sharing-plus",
+        "search",
+        "search-pro"
+    ],
+    "pluginsConfig": {
+        "favicon": {
             "shortcut": "/images/favicon.ico",
             "bookmark": "/images/favicon.png",
             "appleTouch": "/images/favicon.png",
@@ -35,28 +35,28 @@
                 "56x56": "/images/favicon.png"
             }
         },
-		"3-ba": {
+        "3-ba": {
             "token": "05e74883e1b59d73b500efaacbf8ce69"
         },
-		"github": {
+        "github": {
             "url": "https://github.com/Nick233333/gitbook"
-		},
-		"edit-link": {
+        },
+        "edit-link": {
             "base": "https://github.com/Nick233333/gitbook/blob/master/",
             "label": "编辑本页面"
         },
-		"sitemap": {
+        "sitemap": {
             "hostname": "http://linux.hellocode.name"
-	    },
-		"donate": {
+        },
+        "donate": {
             "wechat": "https://wp.hellocode.name/wp-content/uploads/2017/12/reward_1513737335-200x200.jpg",
             "alipay": "https://wp.hellocode.name/wp-content/uploads/2017/12/reward_1513737644-200x200.jpg",
             "title": "",
             "button": "赏",
             "alipayText": "支付宝打赏",
             "wechatText": "微信打赏"
-	    },
-		"sharing": {
+        },
+        "sharing": {
             "douban": false,
             "facebook": false,
             "google": false,
@@ -79,6 +79,6 @@
                 "qq", "qzone"
             ]
         }
-	}
+    }
 
 }
