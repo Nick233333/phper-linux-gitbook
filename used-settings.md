@@ -5,6 +5,15 @@
 ssh-keygen -t rsa #生成的公钥匙在 ~/.ssh/ 目录下
 ```
 第二步，把公钥上传到服务器端，登录服务器追加公钥到 authorized_keys 文件
+
+__简单版__
+
+```
+ssh-copy-id -i ~/.ssh/id_rsa.pub username@ip
+```
+
+__复杂版__
+
 ```
 scp id_rsa.pub root@ip地址:文件保存路径
 ssh root@ip #登录服务器
@@ -13,6 +22,8 @@ cat id_rsa.pub >> /root/.ssh/authorized_keys 追加到文件中
 
 ```
 > 如果 .shh 目录或 authorized_keys 文件不存在需要自己新建
+
+
 
 第三步，修改服务器端 ssh 配置文件 /etc/ssh/sshd_config
 
