@@ -24,9 +24,13 @@
         "splitter",
         "sharing-plus",
         "search",
-        "search-pro"
+        "search-pro",
+        "disqus"
     ],
     "pluginsConfig": {
+        "disqus": {
+            "shortName": "gitbook-linux"
+        },
         "favicon": {
             "shortcut": "/images/favicon.ico",
             "bookmark": "/images/favicon.png",
