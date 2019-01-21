@@ -39,9 +39,11 @@ wq 保存退出
 wq！ 强制保存退出
 set nu 显示行号
 set nonu 隐藏行号
-:8 跳转到指定行
-:$ 跳转文件尾
-:open path/filename 打开其他文件编辑
+8 跳转到指定行
+$ 跳转文件尾
+open path/filename 打开其他文件编辑
 ？关键字 向下搜索
 /关键字 向上搜索
+set hlsearch #设置搜索高亮
+set nohlsearch #取消搜索高亮
 ```
