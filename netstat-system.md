@@ -324,8 +324,8 @@ fg 1 #将任务编号为 1 调到前台运行
 #### pgrep 命令
 
 ```
-pgrep nginx # 查看 nginx 进程
+pgrep nginx #查看 nginx 进程
 
-pgrep -l nginx  #查看 nginx 进程名称
+pgrep -l nginx #查看 nginx 进程名称
 ```
 
