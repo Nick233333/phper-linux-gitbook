@@ -25,9 +25,16 @@
         "sharing-plus",
         "search",
         "search-pro",
-        "disqus"
+        "disqus",
+        "page-footer-ex"
     ],
     "pluginsConfig": {
+        "page-footer-ex": {
+            "copyright": "[Nick](https://github.com/nick233333)",
+            "markdown": true,
+            "update_label": "<i>上次更新</i>",
+            "update_format": "YYYY-MM-DD HH:mm:ss"
+        },
         "disqus": {
             "shortName": "gitbook-linux"
         },
