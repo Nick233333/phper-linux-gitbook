@@ -16,3 +16,9 @@ li.chapter {
 .book-body {
     font-size: 1.5rem !important;
 }
+.copy-code-button {
+    display: none;
+}
+pre:hover > .copy-code-button {
+    display: block;
+}

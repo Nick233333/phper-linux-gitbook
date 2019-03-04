@@ -26,7 +26,8 @@
         "search",
         "search-pro",
         "disqus",
-        "page-footer-ex"
+        "page-footer-ex",
+        "copy-code-button"
     ],
     "pluginsConfig": {
         "page-footer-ex": {
