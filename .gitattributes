@@ -1,0 +1,6 @@
+* text=auto
+
+*.css linguist-language=linux
+*.js linguist-language=linux
+*.html linguist-language=linux
+*.md linguist-language=linux
