@@ -9,6 +9,8 @@ git config --global user.name Nick #设置用户名
 
 git config --global user.email nick_php@163.com #设置邮箱
 
+git config --global log.date format:'%Y-%m-%d %H:%M:%S' #时间显示格式修改
+
 git help config #获取帮助信息
 ```
 
