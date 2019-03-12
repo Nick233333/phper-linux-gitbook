@@ -132,7 +132,7 @@ clear #清除屏幕内容
 #### alias 命令
 
 ```
-alias gs="git status" #给  git status 起别名为 gs，仅在当前环境生效，关闭终端或退出登录以后无效，一般配置在当前 shell 的配置文件中
+alias gs="git status" #给 git status 起别名为 gs，仅在当前环境生效，关闭终端或退出登录以后无效，一般配置在当前 shell 的配置文件中
 ```
 
 #### unalias 命令
@@ -312,4 +312,13 @@ enable -a type #解除禁用
 ```
 visudo #打开编辑 /etc/sudoers 文件
 ```
+
+#### timeout 命令
+
+```
+timeout 3s php ./index.php #执行脚本，超过 3s 强制关掉进程
+```
+
+补充：时间单位有 s 秒 m 分钟 h 小时 d 天，默认为秒，没有超时返回 0 ，超时返回 124
+
 
