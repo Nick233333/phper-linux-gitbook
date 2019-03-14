@@ -329,3 +329,21 @@ pgrep nginx #查看 nginx 进程
 pgrep -l nginx #查看 nginx 进程名称
 ```
 
+#### vmstat 命令
+
+```
+
+```
+
+#### iostat 命令
+
+```
+
+```
+
+#### iotop 命令
+
+```
+
+```
+
