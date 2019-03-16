@@ -24,7 +24,7 @@
 * [grep-sed-awk](grep-sed-awk.md)
 
 ## 网络与系统资源
-* [netstat-system](netstat-system.md)
+* [network-system](network-system.md)
 
 ## 打包压缩相关
 * [tar-zip-gzip-bzip2-xz](tar-zip-gzip-bzip2-xz.md)	

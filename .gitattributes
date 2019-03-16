@@ -1,6 +1,6 @@
 * text=auto
 
-*.css linguist-language=linux
-*.js linguist-language=linux
-*.html linguist-language=linux
-*.md linguist-language=linux
+*.css linguist-language=Shell
+*.js linguist-language=Shell
+*.html linguist-language=Shell
+*.md linguist-language=Shell

@@ -347,3 +347,9 @@ pgrep -l nginx #查看 nginx 进程名称
 
 ```
 
+#### tcpdump 命令
+
+```
+
+```
+
