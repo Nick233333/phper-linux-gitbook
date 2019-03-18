@@ -68,7 +68,5 @@
 
 ## 参考资料
 * [书籍](http://billie66.github.io/TLCL/book/)	
-* [网站](http://www.ywnds.com/)
-* [网站](http://man.linuxde.net/)
 
 
