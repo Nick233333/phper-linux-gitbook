@@ -353,3 +353,19 @@ pgrep -l nginx #查看 nginx 进程名称
 
 ```
 
+#### lscpu 命令
+
+```
+lscpu # 查看 cpu 信息 
+```
+
+补充： 与 `cat /proc/cpuinfo` 类似
+
+#### visudo 命令
+
+```
+visudo # 快速编辑 /etc/sudoers 文件
+```
+
+补充：默认编辑器为 nano ，修改为 vim 执行 `sudo update-alternatives --config editor` 弹出选项，选择 vim.tiny 按回车键即可
+
