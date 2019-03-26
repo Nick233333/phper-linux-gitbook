@@ -152,3 +152,23 @@ git remote rename origin github #重命名
 git remote remove origin #取消与远程仓库关联
 
 ```
+
+__暂存代码__
+
+```
+git stash #将本地修改代码暂存
+
+git stash save 'message' #暂存代码并添加备注
+
+git stash pop #把最近的暂存代码还原
+
+git stash pop stash@{0} #还原指定 id 的暂存代码
+
+git stash list #查看暂存代码列表
+
+git stash drop #删除最近的暂存代码
+
+git stash drop stash@{0} #删除指定 id 的暂存代码
+
+git stash ckear #清空所有暂存代码
+```
