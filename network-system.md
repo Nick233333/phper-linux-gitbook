@@ -89,7 +89,30 @@ pstree -p #显示 PID 的进程树
 
 ```
 lsof -i:22 #查看 22 端口打开的进程文件
+
+lsof -i 4 #查看 IPv4 的进程文件
+
+lsof -i 6 #查看 IPv6 的进程文件
+
+lsof -i TCP #查看 TCP 进程文件
+
+lsof -i UDP #查看 UDP 进程文件
+
+lsof -i -sTCP:LISTEN #查看监听 TCP 的进程
+
+lsof -i:80 -sTCP:LISTEN #查看监听 80 端口的 TCP 的进程
+ 
+lsof -t #查看进程 id 列表
+
+lsof -p 470 #查看知道进程 id 的文件
+
+lsof -u nick #查看指定用户进程文件
+
+lsof -u ^nick #查看排除指定用户的进程文件
+
 ```
+
+补充：`lsof` 命令显示内容分别为：进程的名称、进程 id 、用户名称、文件描述符、类型、设备、大小、节点磁盘上的标识）、文件名称
 
 #### kill 命令
 
