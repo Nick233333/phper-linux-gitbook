@@ -112,7 +112,7 @@ lsof -u ^nick #查看排除指定用户的进程文件
 
 ```
 
-补充：`lsof` 命令显示内容分别为：进程的名称、进程 id 、用户名称、文件描述符、类型、设备、大小、节点磁盘上的标识）、文件名称
+补充：`lsof` 命令显示内容分别为：进程的名称、进程 id 、用户名称、文件描述符、类型、设备、大小、节点(节点磁盘上的标识）、文件名称
 
 #### kill 命令
 
@@ -390,5 +390,5 @@ lscpu # 查看 cpu 信息
 visudo # 快速编辑 /etc/sudoers 文件
 ```
 
-补充：默认编辑器为 nano ，修改为 vim 执行 `sudo update-alternatives --config editor` 弹出选项，选择 vim.tiny 按回车键即可
+补充：默认编辑器为 `nano` ，修改为 vim 执行 `sudo update-alternatives --config editor` 弹出选项，选择 `vim.tiny` 按回车键即可
 
