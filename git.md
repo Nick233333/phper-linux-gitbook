@@ -14,6 +14,21 @@ git config --global log.date format:'%Y-%m-%d %H:%M:%S' #时间显示格式修�
 git help config #获取帮助信息
 ```
 
+__快捷别名__
+
+```
+alias gs='git status'
+alias gm='git merge'
+alias gtag='git tag'
+alias gl='git log'
+alias gb='git branch'
+alias gpull='git pull'
+alias gpush='git push'
+alias ga='git add -A'
+alias gc='git commit -m'
+alias gcheckout='git checkout'
+```
+
 __普通操作__
 
 ```
