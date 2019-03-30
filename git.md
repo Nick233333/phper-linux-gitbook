@@ -27,6 +27,7 @@ alias gpush='git push'
 alias ga='git add -A'
 alias gc='git commit -m'
 alias gcheckout='git checkout'
+alias glt='git describe --tags' #最新的 tag 名称，提交次数
 ```
 
 __普通操作__
