@@ -3,13 +3,21 @@
 __配置__
 
 ```
-git config --list  #查看配置的信息
+git config --list  #查看全局配置的信息
+
+git config --global -l #查看全局配置
+
+git config --system -l #查看系统配置
+
+git config --local -l  #查看本地仓库配置
 
 git config --global user.name Nick #设置用户名
 
 git config --global user.email nick_php@163.com #设置邮箱
 
 git config --global log.date format:'%Y-%m-%d %H:%M:%S' #时间显示格式修改
+
+git config --global core.ignorecase false #配置文件目录区分大小写
 
 git help config #获取帮助信息
 ```
@@ -60,6 +68,10 @@ git checkout . #恢复暂存区的所有文件到工作区
 git checkout file #恢复暂存区的指定文件到工作区
 
 git checkout af442cb672b02cdfca1fcb index.php 恢复某个 commit 的指定文件到暂存区和工作区
+
+git rebase -i af442cb672 将多个已提交未推送的 commit 合并成一个，把 pick 改成 s 保存之后修改提交信息即可
+
+git rebase --abort 撤销合并
 
 ```
 
@@ -133,6 +145,8 @@ git branch -d branch #删除本地分支
 git branch -D branch #强制删除本地分支(当分支内容有修改并且已经 commit 时，分支没有合并，需要强制删除)
 
 git push origin :branch #删除远程分支
+
+git branch -r -d branch #删除远程分支，没有执行此命令 git branch-r 还是能看到远程分支
 
 ```
 
