@@ -19,6 +19,12 @@ git config --global log.date format:'%Y-%m-%d %H:%M:%S' #时间显示格式修�
 
 git config --global core.ignorecase false #配置文件目录区分大小写
 
+git config --global core.editor vim #配置 vim 为编辑器
+
+git config --global color.ui true #配置高亮
+
+git config --global merge.tool vimdiff #配置差异分析工具
+
 git help config #获取帮助信息
 ```
 
