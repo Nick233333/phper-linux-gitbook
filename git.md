@@ -59,6 +59,8 @@ git add -A #添加所有文件到版本库
 
 git commit -m '注释' #提交
 
+git blame filename #查看文件修改记录
+
 git push #推送到仓库
 
 git pull #拉取当前分支仓库最新代码
@@ -68,6 +70,8 @@ git pull dev #拉取指定分支的代码与本地分支合并
 git reset --hard #回滚到上版本
 
 git reset --hard af442cb672b02cdfca1fcb #回滚到指定的版本
+
+git revert af442cb67 #回退到某个提交的代码，新增一个 commit
 
 git checkout . #恢复暂存区的所有文件到工作区
 
