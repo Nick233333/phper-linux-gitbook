@@ -69,4 +69,7 @@
 ## 参考资料
 * [书籍](http://billie66.github.io/TLCL/book/)	
 
+## 贡献指南
+* [贡献](CONTRIBUTING.md)
+
 
