@@ -64,7 +64,10 @@
 * [Shell](shell.md)	
 
 ## 实用 shell 例子
-* [demo](demo.md)	
+* [demo](demo.md)
+
+## 性能优化
+* [平均负载](stress-sysstat-mpstat-pidstat-watch-uptime.md)
 
 ## 参考资料
 * [书籍](http://billie66.github.io/TLCL/book/)	
