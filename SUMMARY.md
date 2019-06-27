@@ -68,6 +68,7 @@
 
 ## 性能优化
 * [平均负载](stress-sysstat-mpstat-pidstat-watch-uptime.md)
+* [CPU 上下文切换](cpu-context.md)
 
 ## 参考资料
 * [书籍](http://billie66.github.io/TLCL/book/)	
