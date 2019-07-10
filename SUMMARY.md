@@ -70,6 +70,7 @@
 * [平均负载](stress-sysstat-mpstat-pidstat-watch-uptime.md)
 * [CPU 上下文切换](cpu-context.md)
 * [CPU 使用率过高](cpu-used.md)
+* [不可中断进程和僵尸进程](zombie-process.md)
 
 ## 参考资料
 * [书籍](http://billie66.github.io/TLCL/book/)	
