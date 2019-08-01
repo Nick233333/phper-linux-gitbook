@@ -210,5 +210,5 @@ git stash drop #删除最近的暂存代码
 
 git stash drop stash@{0} #删除指定 id 的暂存代码
 
-git stash ckear #清空所有暂存代码
+git stash clear #清空所有暂存代码
 ```
