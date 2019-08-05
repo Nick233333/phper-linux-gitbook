@@ -40,6 +40,7 @@ alias gpull='git pull'
 alias gpush='git push'
 alias ga='git add -A'
 alias gc='git commit -m'
+alias gam='git commit -am'
 alias gcheckout='git checkout'
 alias glt='git describe --tags' #最新的 tag 名称，提交次数
 ```
@@ -58,6 +59,10 @@ git add . #添加当前目录下所有文件到版本库
 git add -A #添加所有文件到版本库
 
 git commit -m '注释' #提交
+
+git commit -am '提交信息' #添加并提交信息
+
+git commit --amend #修改最近一次的 commit 信息
 
 git blame filename #查看文件修改记录
 
