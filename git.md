@@ -34,7 +34,7 @@ __快捷别名__
 alias gs='git status'
 alias gm='git merge'
 alias gtag='git tag'
-alias gl='git log'
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -- | less"
 alias gb='git branch'
 alias gpull='git pull'
 alias gpush='git push'
