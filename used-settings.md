@@ -1,3 +1,10 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-03-31 14:53:34
+ * @LastEditTime: 2019-08-25 17:51:18
+ * @LastEditors: Please set LastEditors
+ -->
 #### ssh 公私钥登录配置
 
 第一步，在客户端生成公钥
@@ -97,5 +104,24 @@ Port 22228           # ssh 端口，自定义端口，修改为指定端口号
 ```
 ssh test1 #如果配置了公私钥就直接登录，没有的话输入密码登录
 ```
+
+---
+
+#### 修改主机名
+
+临时生效，重启服务器会还原
+
+```
+hostname ubuntu-1604
+```
+
+永久生效
+
+1. 修改 `/etc/hostname` 文件中的名称
+2. 修改 `/etc/hosts` 文件中的旧名称，或者新添加一条 `127.0.0.1 ubuntu-1604`
+
+> 适用于 `Ubuntu 16.04` 和 `CentOS 7` 以上版本
+
+
 
 
