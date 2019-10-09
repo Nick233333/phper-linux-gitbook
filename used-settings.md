@@ -97,6 +97,7 @@ Host test2           #自定义名称
 HostName ip          #服务器 ip 地址
 User nick            #用户名
 Port 22228           # ssh 端口，自定义端口，修改为指定端口号
+IdentityFile /your/path/ # 密钥文件地址，要绝对路径
 ```
 
 连接方式
