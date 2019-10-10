@@ -49,6 +49,25 @@ service sshd restart #重启 sshd 服务
 
 ---
 
+#### ssh 连接超时配置
+
+把 `/etc/ssh/sshd_config` 文件中 `ClientAliveInterval` 、`ClientAliveCountMax` 两个配置修改为
+
+```
+ClientAliveInterval 60 #服务端向客户端发送信息的间隔时间，单位为秒
+ClientAliveCountMax 3  #服务端发送信息的总次数
+```
+
+`CentOs` 直接修改即可，`Ubuntu` 默认没有需要新增。
+
+重启服务
+
+```
+systemctl restart sshd
+```
+
+---
+
 #### 禁止 ping 服务器配置
 
 第一种方法：临时生效配置
