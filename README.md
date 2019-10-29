@@ -8,6 +8,10 @@
 
 个人能力有限，水平也有限，希望有想法的朋友提交代码，一起完善它！阅读 [贡献指南](CONTRIBUTING.md) 查看更多开发者帮助。
 
+## 微信订阅号
+
+<img width="120" src="/images/qrcode_for_wechat.jpg" alt="微信订阅号" title="微信订阅号" />
+
 ## 知识共享许可协议
 
 ![知识共享许可协议](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)  
