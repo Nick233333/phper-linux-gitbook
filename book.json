@@ -12,6 +12,7 @@
         "website": "styles/website.css"
     },
     "plugins": [
+		"back-to-top-button",
         "favicon",
         "anchors",
         "3-ba",
