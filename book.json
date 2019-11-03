@@ -26,9 +26,9 @@
         "sharing-plus",
         "search",
         "search-pro",
-        "disqus",
         "page-footer-ex",
-        "copy-code-button"
+        "copy-code-button",
+        "advanced-emoji"
     ],
     "pluginsConfig": {
         "page-footer-ex": {
@@ -36,9 +36,6 @@
             "markdown": true,
             "update_label": "<i>上次更新</i>",
             "update_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "disqus": {
-            "shortName": "gitbook-linux"
         },
         "favicon": {
             "shortcut": "/images/favicon.ico",
