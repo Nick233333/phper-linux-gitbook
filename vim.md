@@ -67,7 +67,6 @@ set expandtab #tab转空格
 set softtabstop=4 #tab 转为 4 个空格。
 set incsearch #搜索跳转到第一个匹配的值
 set ignorecase #搜索不区分大小写
-set spell spelllang=en_us #英语检测
 set autoread #当有其他人修改文件自动读取
 set autoindent #自动缩进
 set showmode #底部显示当前模式
