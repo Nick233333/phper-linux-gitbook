@@ -54,3 +54,26 @@ set nocul #光标取消高亮当前行
 set cuc #光标高亮当前列
 set nocuc #光标取消高亮当前列
 ```
+
+__个人 Vim 配置__
+
+配置文件位于 `~/.vimrc`
+
+```
+filetype on #识别文件类型
+syntax on #高亮语法
+set tabstop=4 #tab缩进转为 4 个空格
+set expandtab #tab转空格
+set softtabstop=4 #tab 转为 4 个空格。
+set incsearch #搜索跳转到第一个匹配的值
+set ignorecase #搜索不区分大小写
+set spell spelllang=en_us #英语检测
+set autoread #当有其他人修改文件自动读取
+set autoindent #自动缩进
+set showmode #底部显示当前模式
+set showcmd #在底部显示命令
+set paste #粘贴时保持缩进格式
+```
+
+修改完退出终端重新打开或者执行 `source ~/.vimrc` , 如有报错无需理会，报错原因是 `shel` 无法识别 `vim` 的配置。
+
