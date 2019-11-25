@@ -224,3 +224,17 @@ git stash drop stash@{0} #删除指定 id 的暂存代码
 
 git stash clear #清空所有暂存代码
 ```
+
+__实用不常用命令__
+
+```
+git shortlog -sn #查看成员提交次数
+
+git whatchanged --since='2 weeks ago' #查看指定时间的提交记录
+
+git diff --name-only --diff-filter=U | uniq  | xargs $EDITOR #查看所有冲突文件
+
+#删除最近一次提交中文件并修改提交信息
+git rm —-cached file_name 
+git commit —-amend
+```
