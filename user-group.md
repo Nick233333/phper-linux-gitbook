@@ -93,7 +93,7 @@ groupadd test #添加用户组
 #### groupmod 命令
 
 ```
-groupmod -n new_test test #讲 test 组名修改为 new_test
+groupmod -n new_test test #把 test 组名修改为 new_test
 ```
 
 #### gpasswd  命令

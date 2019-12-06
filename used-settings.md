@@ -1,10 +1,3 @@
-<!--
- * @Description: In User Settings Edit
- * @Author: your name
- * @Date: 2019-03-31 14:53:34
- * @LastEditTime: 2019-08-25 17:51:18
- * @LastEditors: Please set LastEditors
- -->
 #### ssh 公私钥登录配置
 
 第一步，在客户端生成公钥
