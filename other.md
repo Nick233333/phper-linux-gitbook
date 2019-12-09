@@ -210,18 +210,30 @@ ln -s /usr/local/php/bin/php /usr/local/bin/php #创建软连接，软连接被�
 ```
 scp demo.php username@ip:path #将本地文件复制在远程服务器
 
-scp -r dirname username@ip:path #将本地命令复制到远程服务器
+scp -r dirname username@ip:path #将本地目录复制到远程服务器
 
 scp [-P 端口号] xxx username@ip:path #指定端口号
 
 scp username@ip:path/filename ./ #将远程服务器上的文件复制到本地
 
 scp -r username@ip:path/dirname ./ #将远程服务器上的目录复制到本地
-
-scp [-P 端口号] [-r] username@ip:path/ ./
 ```
 
 补充：`-P` 指定端口，`-r` 递归
+
+#### rz 命令
+
+```
+rz #执行命令之后会弹出选择框，把本地文件上传到远程服务器
+```
+
+#### sz 命令
+
+```
+sz filename filename #执行命令之后会弹出选择框，把文件远程服务器文件下载到指定的命令
+```
+
+补充：默写系统一般没有安装，需要用户自行安装。rz sz 命令只支持文件传输，并且文件大小不能超过 4G ,并且 Mac Windows 系统需要配置上传下载目录才能使用。
 
 #### source 命令
 
