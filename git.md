@@ -76,6 +76,10 @@ git reset --hard #回滚到上版本
 
 git reset --hard af442cb672b02cdfca1fcb #回滚到指定的版本
 
+git reset --hard origin/master #将本地代码重置和远程仓库代码一致，避免产生一个新个合并日志
+
+git reset --hard origin/api #将本地代码重置与远程仓库指定分支一致，避免产生一个新个合并日志
+
 git revert af442cb67 #回退到某个提交的代码，新增一个 commit
 
 git checkout . #恢复暂存区的所有文件到工作区
