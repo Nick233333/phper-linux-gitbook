@@ -68,7 +68,9 @@ __例子__
 
 01 * 2 * * ~/http.sh #每月2号第一分钟执行一次 ~/http.sh shell 文件
 
-* 2,3 * * * ~/http.sh #每天凌晨2点，3点 执行一次 ~/http.sh shell 文件
+0 2,3 * * * ~/http.sh #每天凌晨2点，3点 执行一次 ~/http.sh shell 文件
+
+* 2,3 * * * ~/http.sh #每天凌晨2点，3点每分钟 执行一次 ~/http.sh shell 文件
 
 10 * * * 1-5 root /usr/local/bin/php /home/ubuntu/demo.php #周一到周五第10分钟以 root 用户 php 命令去执行一次 demo.php 文件
 
