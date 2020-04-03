@@ -28,7 +28,8 @@
         "search-pro",
         "page-footer-ex",
         "copy-code-button",
-        "advanced-emoji"
+        "advanced-emoji",
+        "pageview-count"
     ],
     "pluginsConfig": {
         "page-footer-ex": {
