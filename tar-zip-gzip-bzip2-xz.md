@@ -32,6 +32,8 @@ unzip -o html.zip -d /usr/local/ #解压 html.zip 文件到 /usr/local/ 下
 
 zip -qr html.zip ./html #将当前html目录递归压缩为 html.zip
 
+zip -r test_python.zip test_python -x "/test_python/index.py" #压缩目录，排除指定文件
+
 zip -r test_python.zip test_python -x "/test_python/venv/*" -x "/test_python/lib/__pycache__/*" #压缩目录，排除多个指定目录
 ```
 
