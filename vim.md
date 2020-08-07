@@ -64,6 +64,11 @@ set cul #光标高亮当前行
 set nocul #光标取消高亮当前行
 set cuc #光标高亮当前列
 set nocuc #光标取消高亮当前列
+e /path/file #切换文件编辑
+vsplit /path/file #垂直分屏打开文件
+split /path/file #水平分屏打开文件
+only #只保留当前窗口
+close #关闭当前窗口，如果只有一个窗口则无效
 ```
 
 __个人 Vim 配置__
