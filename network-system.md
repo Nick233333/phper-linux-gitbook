@@ -61,12 +61,12 @@ top -u root #查看指定用户的进程
 #### netstat 命令
 
 ```
-netstat  -tuln  #查看本机所有监听端口
+netstat  -tulnp  #查看本机所有监听端口
 
 netstat  -an #查看所有网络连接
 ```
 
-补充：`t` 代表 `tcp` ， `u` 代表 `udp` ，`l` 代表监听，`n` 代表以 IP 和端口号显示。
+补充：`t` 代表 `tcp` ， `u` 代表 `udp` ，`l` 代表监听，`n` 代表以 IP 和端口号显示，`p`代表进程ID和程序名。
 
 #### ps 命令
 
