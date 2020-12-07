@@ -5,6 +5,8 @@ composer list #显示所有命令
 
 composer show #显示所有包信息
 
+composer info packagename #查看指定包信息
+
 composer install #在 composer.json 配置中添加依赖库之后运行此命令安装
 
 composer create-project laravel/laravel Laravel --prefer-dist 5.1.* #创建项目

@@ -47,6 +47,7 @@
 ## 其他
 * [other](other.md)
 * [常用配置](used-settings.md)
+* [编码风格](code-style.md)
 
 ## PHP 依赖工具
 * [Composer](composer.md)
