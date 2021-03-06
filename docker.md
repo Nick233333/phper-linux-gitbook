@@ -54,3 +54,15 @@ docker container prune #删除所有停止运行的容器
 ```
 docker rm $(docker ps -aq) #删除所有停止运行的容器
 ```
+
+```
+ docker run -p 16379:6379 --name redis -v redis-data:/data -d redis redis-server --requirepass "123456" #运行 redis 并且设置密码和数据持久化
+```
+
+```
+docker run --name my-mysql -p 13306:3306 -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=mysql -d mysql:5.7 #运行 mysql 并且设置密码和数据持久化
+```
+
+```
+docker run --name my-nginx -d -p 8080:80 -v /test/nginx/www/a:/usr/share/nginx/html -v /test/nginx/log:/var/log/nginx -v /test/nginx/www/conf/nginx.conf:/etc/nginx/conf/nginx.conf nginx:1.18-alpine #运行 nginx 并且设置日志和配置文件和挂载目录
+```
