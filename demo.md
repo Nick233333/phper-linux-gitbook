@@ -2,7 +2,7 @@
 
 新建文件 `vim ~/http.sh` 写入以下内容
 
-```
+```sh
 #!/bin/bash
 
 ip=xxxxxx #自定义
@@ -16,7 +16,7 @@ fi
 
 设置定时任务
 
-```
+```sh
 */10 * * * * ~/http.sh #10分钟执行一次
 ```
 
@@ -26,7 +26,7 @@ fi
 
 新建文件写入以下内容
 
-```
+```sh
 #!/usr/bin/env bash
 
 read name
@@ -47,7 +47,7 @@ fi
 
 新建文件 `vim ~/mysqldump.sh` 写入以下内容
 
-```
+```sh
 #!/bin/bash
 
 dir=~/data_bak #自定义
@@ -66,7 +66,7 @@ fi
 
 设置定时任务
 
-```
+```sh
 1 3 * * 0 ~/mysqldump.sh # 每周日凌晨3点1分执行
 ```
 
@@ -76,7 +76,7 @@ fi
 
 #### 获取文件名
 
-```
+```sh
 #!/bin/bash
 
 file_jpg="sample.jpg"
@@ -88,7 +88,7 @@ echo File name is: $name
 
 #### 获取文件扩展名
 
-```
+```sh
 #!/bin/bash
 
 file="sample.png.text"
@@ -99,7 +99,7 @@ echo ${file##*.} #贪婪模式，匹配到最后一个 .
 
 #### 重命名文件
 
-```
+```sh
 #!/bin/bash
 
 count=1;
@@ -110,4 +110,15 @@ do
     mv "$file" "$new_file"
     let count++
 done
+```
+
+expect 自动输入密码登录服务器
+
+```sh
+#!/usr/bin/expect
+
+spawn ssh username@ip
+expect "password:"
+send "your_password\r"
+interact
 ```
