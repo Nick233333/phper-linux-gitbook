@@ -333,4 +333,10 @@ timeout 3s php ./index.php #执行脚本，超过 3s 强制关掉进程
 
 补充：时间单位有 s 秒 m 分钟 h 小时 d 天，默认为秒，没有超时返回 0 ，超时返回 124
 
+#### Golang 压缩编译
 
+```
+go build -ldflags="-s -w" -o server main.go && upx -9 server
+```
+
+需要先安装 upx 工具
