@@ -20,7 +20,6 @@
         "github",
         "edit-link",
         "donate",
-        "sitemap",
         "-sharing",
         "splitter",
         "sharing-plus",
@@ -55,9 +54,6 @@
         "edit-link": {
             "base": "https://github.com/Nick233333/gitbook/blob/master/",
             "label": "编辑本页面"
-        },
-        "sitemap": {
-            "hostname": "http://linux.hellocode.name"
         },
         "donate": {
             "wechat": "https://wp.hellocode.name/wp-content/uploads/2017/12/reward_1513737335-200x200.jpg",
