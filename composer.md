@@ -27,5 +27,9 @@ composer require monolog/monolog=1.19 #添加指定包和版本
 
 composer require monolog/monolog 1.19 #添加指定包和版本
 
-composer dump-autoload #如果更新了composer.json需要更新autoload
+composer dump-autoload #如果更新了composer.json 需要更新autoload
+
+composer config repositories.package-name path ../your-path/package-name #配置本地包路径 
+
+composer require username/package-name:dev-master #安装 master 分支最新的提交，开发本地包测试时使用最多
 ```
