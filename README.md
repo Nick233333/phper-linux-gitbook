@@ -17,10 +17,3 @@
 ![知识共享许可协议](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)  
 
 本作品采用 [知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/) 进行许可。
-
-### 推荐云服务器
-
-<a href="https://url.cn/5qO8uY3" target="_bank"><img src="/images/tencent-cloud-new-user.jpg" alt="腾讯云" title="腾讯云" /></a>
-
-<a href="https://passport.ucloud.cn/?invitation_code=C1x0BB8716E82AC&ytag=re4763" target="_bank"><img style="background: #2d334a;max-height: 75px;width: 100%;" src="/images/ucloud-logo.png" alt="Ucloud" title="Ucloud" /></a>
-
