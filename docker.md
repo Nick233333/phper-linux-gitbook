@@ -44,6 +44,14 @@ docker stop $(docker ps -aq) #暂停所有容器
 ```
 
 ```
+docker inspect container-id #查看容器所有信息
+```
+
+```
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container-name-or-id #查看容器IP
+```
+
+```
 docker rm -f my-redis #强制删除运行中的容器
 ```
 
