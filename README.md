@@ -12,6 +12,11 @@
 
 <img width="120" src="/images/qrcode_for_wechat.jpg" alt="微信订阅号" title="微信订阅号" />
 
+## Star 趋势
+
+[![Star 趋势](https://api.star-history.com/svg?repos=Nick233333/phper-linux-gitbook&type=Date)](https://star-history.com/#Nick233333/phper-linux-gitbook&Date)
+
+
 ### 知识共享许可协议
 
 ![知识共享许可协议](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)  
