@@ -202,6 +202,17 @@ git remote remove origin #取消与远程仓库关联
 
 ```
 
+__保持 fork 之后的项目和源仓库同步__
+```
+git remote add upstream [upstream_url] #添加上游仓库 upstream 任意
+
+git fetch upstream #拉取最新代码
+
+git merge upstream/<branch_name> #将upstream/<branch_name> merge到本地当前分支
+
+git push origin <branch_name> #push到自己的github仓库
+```
+
 __暂存代码__
 
 ```
