@@ -136,5 +136,24 @@ hostname ubuntu-1604
 > 适用于 `Ubuntu 16.04` 和 `CentOS 7` 以上版本
 
 
+---
 
+#### Nginx 日志按天分隔
+
+修改配置文件
+
+```
+log_format  main  '$time_iso8601 - $remote_addr $remote_user "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+map $time_iso8601 $logdate {
+    '~^(?<ymd>\d{4}-\d{2}-\d{2})' $ymd;
+    default 'date-not-found';
+}
+
+access_log logs/access-$logdate.log main;
+```
+
+main 名称可以自定义修改，修改完执行 `nginx -t` 看下语法有没问题，没问题再执行 `nginx -s reload` 就可以了。
 
