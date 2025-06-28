@@ -10,7 +10,7 @@
 
 ### 微信订阅号
 
-<img width="120" src="/images/qrcode_for_wechat.jpg" alt="微信订阅号" title="微信订阅号" />
+深漂程序员Nick
 
 ### Star 趋势
 
